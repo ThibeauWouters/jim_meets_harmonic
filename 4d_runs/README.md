@@ -1,0 +1,1 @@
+- `outdir_1`: First attempt, seemed to be working fine but the chirp mass is railing.
