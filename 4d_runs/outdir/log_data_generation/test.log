@@ -1,0 +1,924 @@
+13:38 INFO    : bilby_version version: 2.2.2
+13:38 INFO    : bilby_pipe_version version: 1.3.0
+13:38 INFO    : parallel_bilby_version version: 2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200
+13:38 INFO    : dynesty_version version: 2.1.3
+13:38 INFO    : lalsimulation_version version: 5.3.1
+13:38 INFO    : Generation seed set to 142966
+13:38 INFO    : Injecting waveform with 
+13:38 INFO    : minimum_frequency = 20.0
+13:38 INFO    : maximum_frequency = 2048.0
+13:38 INFO    : trigger_time = 0.0
+13:38 INFO    : start_time = -2.0
+13:38 INFO    : duration = 4.0
+13:38 INFO    : Simulating strain data from psd-colored noise
+13:38 INFO    : Using waveform arguments: {'reference_frequency': 20.0, 'waveform_approximant': 'TaylorF2', 'minimum_frequency': 20.0, 'maximum_frequency': 2048.0, 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'mode_array': None, 'numerical_relativity_file': None}
+13:38 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole_relative_binning
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:40 INFO    : bilby_version version: 2.2.2
+13:40 INFO    : bilby_pipe_version version: 1.3.0
+13:40 INFO    : parallel_bilby_version version: 2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200
+13:40 INFO    : dynesty_version version: 2.1.3
+13:40 INFO    : lalsimulation_version version: 5.3.1
+13:40 INFO    : Generation seed set to 966072
+13:40 INFO    : Setting PSD for H1 from data
+13:40 INFO    : Getting psd-segment data for H1
+13:41 INFO    : bilby_version version: 2.2.2
+13:41 INFO    : bilby_pipe_version version: 1.3.0
+13:41 INFO    : parallel_bilby_version version: 2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200
+13:41 INFO    : dynesty_version version: 2.1.3
+13:41 INFO    : lalsimulation_version version: 5.3.1
+13:41 INFO    : Generation seed set to 822117
+13:41 INFO    : Injecting waveform with 
+13:41 INFO    : minimum_frequency = 20.0
+13:41 INFO    : maximum_frequency = 2048.0
+13:41 INFO    : trigger_time = 0.0
+13:41 INFO    : start_time = -2.0
+13:41 INFO    : duration = 4.0
+13:41 INFO    : Setting strain data from zero noise
+13:41 INFO    : Using waveform arguments: {'reference_frequency': 20.0, 'waveform_approximant': 'TaylorF2', 'minimum_frequency': 20.0, 'maximum_frequency': 2048.0, 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'mode_array': None, 'numerical_relativity_file': None}
+13:41 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole_relative_binning
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:41 INFO    : bilby_version version: 2.2.2
+13:41 INFO    : bilby_pipe_version version: 1.3.0
+13:41 INFO    : parallel_bilby_version version: 2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200
+13:41 INFO    : dynesty_version version: 2.1.3
+13:41 INFO    : lalsimulation_version version: 5.3.1
+13:41 INFO    : Generation seed set to 257630
+13:41 INFO    : Injecting waveform with 
+13:41 INFO    : minimum_frequency = 20.0
+13:41 INFO    : maximum_frequency = 2048.0
+13:41 INFO    : trigger_time = 0.0
+13:41 INFO    : start_time = -2.0
+13:41 INFO    : duration = 4.0
+13:41 INFO    : Setting strain data from zero noise
+13:41 INFO    : Using waveform arguments: {'reference_frequency': 20.0, 'waveform_approximant': 'TaylorF2', 'minimum_frequency': 20.0, 'maximum_frequency': 2048.0, 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'mode_array': None, 'numerical_relativity_file': None}
+13:41 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole_relative_binning
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:43 INFO    : bilby_version version: 2.2.2
+13:43 INFO    : bilby_pipe_version version: 1.3.0
+13:43 INFO    : parallel_bilby_version version: 2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200
+13:43 INFO    : dynesty_version version: 2.1.3
+13:43 INFO    : lalsimulation_version version: 5.3.1
+13:43 INFO    : Generation seed set to 507435
+13:43 INFO    : Injecting waveform with 
+13:43 INFO    : minimum_frequency = 20.0
+13:43 INFO    : maximum_frequency = 2048.0
+13:43 INFO    : trigger_time = 0.0
+13:43 INFO    : start_time = -2.0
+13:43 INFO    : duration = 4.0
+13:43 INFO    : Setting strain data from zero noise
+13:43 INFO    : Using waveform arguments: {'reference_frequency': 20.0, 'waveform_approximant': 'TaylorF2', 'minimum_frequency': 20.0, 'maximum_frequency': 2048.0, 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'mode_array': None, 'numerical_relativity_file': None}
+13:43 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:43 INFO    : Injected signal in H1:
+13:43 INFO    :   optimal SNR = 43.80
+13:43 INFO    :   matched filter SNR = 43.80+0.00j
+13:43 INFO    :   chirp_mass = 28.0
+13:43 INFO    :   mass_ratio = 0.85
+13:43 INFO    :   a_1 = 0.6
+13:43 INFO    :   a_2 = 0.6
+13:43 INFO    :   tilt_1 = 0.0
+13:43 INFO    :   tilt_2 = 0.0
+13:43 INFO    :   phi_12 = 0.0
+13:43 INFO    :   phi_jl = 0.0
+13:43 INFO    :   luminosity_distance = 800.0
+13:43 INFO    :   dec = 0.1
+13:43 INFO    :   ra = 0.1
+13:43 INFO    :   theta_jn = 0.1
+13:43 INFO    :   psi = 0.1
+13:43 INFO    :   phase = 0.1
+13:43 INFO    :   geocent_time = 0.0
+13:43 INFO    : Injected signal in L1:
+13:43 INFO    :   optimal SNR = 52.29
+13:43 INFO    :   matched filter SNR = 52.29-0.00j
+13:43 INFO    :   chirp_mass = 28.0
+13:43 INFO    :   mass_ratio = 0.85
+13:43 INFO    :   a_1 = 0.6
+13:43 INFO    :   a_2 = 0.6
+13:43 INFO    :   tilt_1 = 0.0
+13:43 INFO    :   tilt_2 = 0.0
+13:43 INFO    :   phi_12 = 0.0
+13:43 INFO    :   phi_jl = 0.0
+13:43 INFO    :   luminosity_distance = 800.0
+13:43 INFO    :   dec = 0.1
+13:43 INFO    :   ra = 0.1
+13:43 INFO    :   theta_jn = 0.1
+13:43 INFO    :   psi = 0.1
+13:43 INFO    :   phase = 0.1
+13:43 INFO    :   geocent_time = 0.0
+13:43 INFO    : Injected signal in V1:
+13:43 INFO    :   optimal SNR = 22.75
+13:43 INFO    :   matched filter SNR = 22.75-0.00j
+13:43 INFO    :   chirp_mass = 28.0
+13:43 INFO    :   mass_ratio = 0.85
+13:43 INFO    :   a_1 = 0.6
+13:43 INFO    :   a_2 = 0.6
+13:43 INFO    :   tilt_1 = 0.0
+13:43 INFO    :   tilt_2 = 0.0
+13:43 INFO    :   phi_12 = 0.0
+13:43 INFO    :   phi_jl = 0.0
+13:43 INFO    :   luminosity_distance = 800.0
+13:43 INFO    :   dec = 0.1
+13:43 INFO    :   ra = 0.1
+13:43 INFO    :   theta_jn = 0.1
+13:43 INFO    :   psi = 0.1
+13:43 INFO    :   phase = 0.1
+13:43 INFO    :   geocent_time = 0.0
+13:43 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole_relative_binning
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:43 INFO    : Initial fiducial waveforms set up
+13:43 INFO    : Summary Data Obtained
+13:43 INFO    : Fiducial likelihood: 2585.29
+13:43 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole_relative_binning
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:43 INFO    : Setting up likelihood with marginalizations: distance=False, time=False, phase=False.
+13:43 INFO    : Setting sampling-seed=607278
+13:43 INFO    : prior-file save at outdir/data/test_prior.json
+13:43 INFO    : Initial meta_data ={
+  "command_line_args": "{'nlive': 1024, 'dlogz': 0.1, 'n_effective': inf, 'dynesty_sample': 'acceptance-walk', 'dynesty_bound': 'live', 'walks': 100, 'proposals': None, 'maxmcmc': 5000, 'nact': 2, 'naccept': 60, 'min_eff': 10, 'facc': 0.5, 'enlarge': 1.5, 'n_check_point': 1000, 'max_its': 10000000000, 'max_run_time': 10000000000.0, 'fast_mpi': False, 'mpi_timing': False, 'mpi_timing_interval': 0, 'nestcheck': False, 'rejection_sample_posterior': True, 'bilby_zero_likelihood_mode': False, 'sampling_seed': None, 'clean': False, 'no_plot': False, 'do_not_save_bounds_in_resume': True, 'check_point_deltaT': 3600, 'rotate_checkpoints': False, 'ini': 'config.ini', 'verbose': False, 'calibration_model': None, 'spline_calibration_envelope_dict': None, 'spline_calibration_nodes': 10, 'spline_calibration_amplitude_uncertainty_dict': None, 'spline_calibration_phase_uncertainty_dict': None, 'calibration_prior_boundary': 'reflective', 'ignore_gwpy_data_quality_check': True, 'gps_tuple': None, 'gps_file': None, 'timeslide_file': None, 'timeslide_dict': None, 'trigger_time': '0', 'n_simulation': 0, 'data_dict': None, 'data_format': None, 'allow_tape': True, 'channel_dict': None, 'frame_type_dict': None, 'data_find_url': 'https://datafind.ligo.org', 'data_find_urltype': 'osdf', 'gaussian_noise': False, 'zero_noise': True, 'coherence_test': False, 'detectors': ['H1', 'L1', 'V1'], 'duration': 4.0, 'generation_seed': None, 'psd_dict': None, 'psd_fractional_overlap': 0.5, 'post_trigger_duration': 2.0, 'sampling_frequency': 4096, 'psd_length': 32, 'psd_maximum_duration': 1024, 'psd_method': 'median', 'psd_start_time': None, 'maximum_frequency': None, 'minimum_frequency': '20', 'tukey_roll_off': 0.4, 'resampling_method': 'lal', 'injection': False, 'injection_dict': \"{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 800, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}\", 'injection_file': None, 'injection_numbers': None, 'injection_waveform_approximant': None, 'injection_frequency_domain_source_model': None, 'injection_waveform_arguments': None, 'accounting_user': None, 'label': 'test', 'outdir': 'outdir', 'overwrite_outdir': False, 'periodic_restart_time': 28800, 'request_disk': 5, 'conda_env': None, 'scheduler_analysis_time': '7-00:00:00', 'submit': False, 'condor_job_priority': 0, 'additional_transfer_paths': None, 'environment_variables': None, 'getenv': None, 'disable_hdf5_locking': False, 'log_directory': None, 'desired_sites': None, 'analysis_executable': None, 'analysis_executable_parser': None, 'calibration_marginalization': False, 'distance_marginalization': False, 'distance_marginalization_lookup_table': None, 'phase_marginalization': False, 'time_marginalization': False, 'jitter_time': True, 'reference_frame': 'sky', 'time_reference': 'geocent', 'likelihood_type': 'bilby.gw.likelihood.relative.RelativeBinningGravitationalWaveTransient', 'calibration_lookup_table': None, 'number_of_response_curves': 1000, 'roq_folder': None, 'roq_linear_matrix': None, 'roq_quadratic_matrix': None, 'roq_weights': None, 'roq_weight_format': 'hdf5', 'roq_scale_factor': 1, 'fiducial_parameters': \"{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 800, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}\", 'update_fiducial_parameters': False, 'epsilon': 0.025, 'extra_likelihood_kwargs': None, 'plot_trace': False, 'plot_data': False, 'plot_injection': False, 'plot_spectrogram': False, 'create_summary': False, 'notification': 'Never', 'queue': None, 'existing_dir': None, 'webdir': None, 'summarypages_arguments': None, 'result_format': 'hdf5', 'final_result': True, 'final_result_nsamples': 20000, 'default_prior': 'BBHPriorDict', 'deltaT': 0.2, 'prior_file': None, 'prior_dict': \"{chirp-mass: Uniform(name='chirp_mass', minimum=25, maximum=31), mass_ratio = Uniform(name='mass_ratio', minimum=0.125, maximum=1), a_1 = 0.6, a_2 = 0.6, tilt_1 = 0.0, tilt_2 = 0.0, phi_12 = 0.0, phi_jl = 0.0, luminosity_distance = 800, dec =  0.1, ra =  0.1, theta_jn =  0.1, psi =  0.1, phase =  0.1}\", 'enforce_signal_duration': True, 'single_postprocessing_executable': None, 'single_postprocessing_arguments': None, 'n_parallel': 1, 'reweighting_configuration': None, 'reweight_nested_samples': True, 'waveform_generator': 'bilby.gw.waveform_generator.LALCBCWaveformGenerator', 'reference_frequency': 20, 'waveform_approximant': 'TaylorF2', 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'numerical_relativity_file': None, 'waveform_arguments_dict': None, 'mode_array': None, 'frequency_domain_source_model': 'lal_binary_black_hole', 'conversion_function': None, 'generation_function': None, 'sampler': 'dynesty', 'nodes': 1, 'ntasks_per_node': 2, 'time': '24:00:00', 'mem_per_cpu': '2G', 'extra_lines': None, 'slurm_extra_lines': None, 'idx': 0, 'data_dump_file': None, 'accounting': None, 'local': False, 'local_generation': False, 'local_plot': False, 'request_memory': 8.0, 'request_memory_generation': None, 'request_cpus': 1, 'scheduler': 'condor', 'scheduler_args': None, 'scheduler_module': None, 'scheduler_env': None, 'transfer_files': True, 'osg': False, 'plot_calibration': False, 'plot_corner': False, 'plot_marginal': False, 'plot_skymap': False, 'plot_waveform': False, 'plot_format': 'png', 'email': None, 'postprocessing_executable': None, 'postprocessing_arguments': None, 'sampler_kwargs': 'DynestyDefault'}",
+  "unknown_command_line_args": "[]",
+  "injection_parameters": "{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 800.0, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}",
+  "bilby_version": "2.2.2",
+  "bilby_pipe_version": "1.3.0",
+  "config_file": "config.ini",
+  "data_dump_file": "outdir/data/test_data_dump.pickle",
+  "parallel_bilby_version": "2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200",
+  "dynesty_version": "2.1.3",
+  "lalsimulation_version": "5.3.1"
+}
+13:43 INFO    : Complete ini written: outdir/test_config_complete.ini
+13:43 INFO    : Setup complete, now run:
+ $ bash outdir/submit/bash_test.sh
+13:44 INFO    : bilby_version version: 2.2.2
+13:44 INFO    : bilby_pipe_version version: 1.3.0
+13:44 INFO    : parallel_bilby_version version: 2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200
+13:44 INFO    : dynesty_version version: 2.1.3
+13:44 INFO    : lalsimulation_version version: 5.3.1
+13:44 INFO    : Generation seed set to 788222
+13:44 INFO    : Injecting waveform with 
+13:44 INFO    : minimum_frequency = 20.0
+13:44 INFO    : maximum_frequency = 2048.0
+13:44 INFO    : trigger_time = 0.0
+13:44 INFO    : start_time = -2.0
+13:44 INFO    : duration = 4.0
+13:44 INFO    : Setting strain data from zero noise
+13:44 INFO    : Using waveform arguments: {'reference_frequency': 20.0, 'waveform_approximant': 'TaylorF2', 'minimum_frequency': 20.0, 'maximum_frequency': 2048.0, 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'mode_array': None, 'numerical_relativity_file': None}
+13:44 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole_relative_binning
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:44 INFO    : bilby_version version: 2.2.2
+13:44 INFO    : bilby_pipe_version version: 1.3.0
+13:44 INFO    : parallel_bilby_version version: 2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200
+13:44 INFO    : dynesty_version version: 2.1.3
+13:44 INFO    : lalsimulation_version version: 5.3.1
+13:44 INFO    : Generation seed set to 92447
+13:44 INFO    : Injecting waveform with 
+13:44 INFO    : minimum_frequency = 20.0
+13:44 INFO    : maximum_frequency = 2048.0
+13:44 INFO    : trigger_time = 0.0
+13:44 INFO    : start_time = -2.0
+13:44 INFO    : duration = 4.0
+13:44 INFO    : Setting strain data from zero noise
+13:44 INFO    : Using waveform arguments: {'reference_frequency': 20.0, 'waveform_approximant': 'TaylorF2', 'minimum_frequency': 20.0, 'maximum_frequency': 2048.0, 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'mode_array': None, 'numerical_relativity_file': None}
+13:44 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:44 INFO    : Injected signal in H1:
+13:44 INFO    :   optimal SNR = 43.80
+13:44 INFO    :   matched filter SNR = 43.80+0.00j
+13:44 INFO    :   chirp_mass = 28.0
+13:44 INFO    :   mass_ratio = 0.85
+13:44 INFO    :   a_1 = 0.6
+13:44 INFO    :   a_2 = 0.6
+13:44 INFO    :   tilt_1 = 0.0
+13:44 INFO    :   tilt_2 = 0.0
+13:44 INFO    :   phi_12 = 0.0
+13:44 INFO    :   phi_jl = 0.0
+13:44 INFO    :   luminosity_distance = 800.0
+13:44 INFO    :   dec = 0.1
+13:44 INFO    :   ra = 0.1
+13:44 INFO    :   theta_jn = 0.1
+13:44 INFO    :   psi = 0.1
+13:44 INFO    :   phase = 0.1
+13:44 INFO    :   geocent_time = 0.0
+13:44 INFO    : Injected signal in L1:
+13:44 INFO    :   optimal SNR = 52.29
+13:44 INFO    :   matched filter SNR = 52.29-0.00j
+13:44 INFO    :   chirp_mass = 28.0
+13:44 INFO    :   mass_ratio = 0.85
+13:44 INFO    :   a_1 = 0.6
+13:44 INFO    :   a_2 = 0.6
+13:44 INFO    :   tilt_1 = 0.0
+13:44 INFO    :   tilt_2 = 0.0
+13:44 INFO    :   phi_12 = 0.0
+13:44 INFO    :   phi_jl = 0.0
+13:44 INFO    :   luminosity_distance = 800.0
+13:44 INFO    :   dec = 0.1
+13:44 INFO    :   ra = 0.1
+13:44 INFO    :   theta_jn = 0.1
+13:44 INFO    :   psi = 0.1
+13:44 INFO    :   phase = 0.1
+13:44 INFO    :   geocent_time = 0.0
+13:44 INFO    : Injected signal in V1:
+13:44 INFO    :   optimal SNR = 22.75
+13:44 INFO    :   matched filter SNR = 22.75-0.00j
+13:44 INFO    :   chirp_mass = 28.0
+13:44 INFO    :   mass_ratio = 0.85
+13:44 INFO    :   a_1 = 0.6
+13:44 INFO    :   a_2 = 0.6
+13:44 INFO    :   tilt_1 = 0.0
+13:44 INFO    :   tilt_2 = 0.0
+13:44 INFO    :   phi_12 = 0.0
+13:44 INFO    :   phi_jl = 0.0
+13:44 INFO    :   luminosity_distance = 800.0
+13:44 INFO    :   dec = 0.1
+13:44 INFO    :   ra = 0.1
+13:44 INFO    :   theta_jn = 0.1
+13:44 INFO    :   psi = 0.1
+13:44 INFO    :   phase = 0.1
+13:44 INFO    :   geocent_time = 0.0
+13:44 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole_relative_binning
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:44 INFO    : Initial fiducial waveforms set up
+13:44 INFO    : Summary Data Obtained
+13:44 INFO    : Fiducial likelihood: 2585.29
+13:44 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole_relative_binning
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:44 INFO    : Setting up likelihood with marginalizations: distance=False, time=False, phase=False.
+13:44 INFO    : Setting sampling-seed=647276
+13:44 INFO    : prior-file save at outdir/data/test_prior.json
+13:44 INFO    : Initial meta_data ={
+  "command_line_args": "{'nlive': 1024, 'dlogz': 0.1, 'n_effective': inf, 'dynesty_sample': 'acceptance-walk', 'dynesty_bound': 'live', 'walks': 100, 'proposals': None, 'maxmcmc': 5000, 'nact': 2, 'naccept': 60, 'min_eff': 10, 'facc': 0.5, 'enlarge': 1.5, 'n_check_point': 1000, 'max_its': 10000000000, 'max_run_time': 10000000000.0, 'fast_mpi': False, 'mpi_timing': False, 'mpi_timing_interval': 0, 'nestcheck': False, 'rejection_sample_posterior': True, 'bilby_zero_likelihood_mode': False, 'sampling_seed': None, 'clean': False, 'no_plot': False, 'do_not_save_bounds_in_resume': True, 'check_point_deltaT': 3600, 'rotate_checkpoints': False, 'ini': 'config.ini', 'verbose': False, 'calibration_model': None, 'spline_calibration_envelope_dict': None, 'spline_calibration_nodes': 10, 'spline_calibration_amplitude_uncertainty_dict': None, 'spline_calibration_phase_uncertainty_dict': None, 'calibration_prior_boundary': 'reflective', 'ignore_gwpy_data_quality_check': True, 'gps_tuple': None, 'gps_file': None, 'timeslide_file': None, 'timeslide_dict': None, 'trigger_time': '0', 'n_simulation': 0, 'data_dict': None, 'data_format': None, 'allow_tape': True, 'channel_dict': None, 'frame_type_dict': None, 'data_find_url': 'https://datafind.ligo.org', 'data_find_urltype': 'osdf', 'gaussian_noise': False, 'zero_noise': True, 'coherence_test': False, 'detectors': ['H1', 'L1', 'V1'], 'duration': 4.0, 'generation_seed': None, 'psd_dict': None, 'psd_fractional_overlap': 0.5, 'post_trigger_duration': 2.0, 'sampling_frequency': 4096, 'psd_length': 32, 'psd_maximum_duration': 1024, 'psd_method': 'median', 'psd_start_time': None, 'maximum_frequency': None, 'minimum_frequency': '20', 'tukey_roll_off': 0.4, 'resampling_method': 'lal', 'injection': False, 'injection_dict': \"{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 800, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}\", 'injection_file': None, 'injection_numbers': None, 'injection_waveform_approximant': None, 'injection_frequency_domain_source_model': None, 'injection_waveform_arguments': None, 'accounting_user': None, 'label': 'test', 'outdir': 'outdir', 'overwrite_outdir': False, 'periodic_restart_time': 28800, 'request_disk': 5, 'conda_env': None, 'scheduler_analysis_time': '7-00:00:00', 'submit': False, 'condor_job_priority': 0, 'additional_transfer_paths': None, 'environment_variables': None, 'getenv': None, 'disable_hdf5_locking': False, 'log_directory': None, 'desired_sites': None, 'analysis_executable': None, 'analysis_executable_parser': None, 'calibration_marginalization': False, 'distance_marginalization': False, 'distance_marginalization_lookup_table': None, 'phase_marginalization': False, 'time_marginalization': False, 'jitter_time': True, 'reference_frame': 'sky', 'time_reference': 'geocent', 'likelihood_type': 'bilby.gw.likelihood.relative.RelativeBinningGravitationalWaveTransient', 'calibration_lookup_table': None, 'number_of_response_curves': 1000, 'roq_folder': None, 'roq_linear_matrix': None, 'roq_quadratic_matrix': None, 'roq_weights': None, 'roq_weight_format': 'hdf5', 'roq_scale_factor': 1, 'fiducial_parameters': \"{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 800, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}\", 'update_fiducial_parameters': False, 'epsilon': 0.025, 'extra_likelihood_kwargs': None, 'plot_trace': False, 'plot_data': False, 'plot_injection': False, 'plot_spectrogram': False, 'create_summary': False, 'notification': 'Never', 'queue': None, 'existing_dir': None, 'webdir': None, 'summarypages_arguments': None, 'result_format': 'hdf5', 'final_result': True, 'final_result_nsamples': 20000, 'default_prior': 'BBHPriorDict', 'deltaT': 0.2, 'prior_file': None, 'prior_dict': \"{chirp-mass: Uniform(name='chirp_mass', minimum=25, maximum=31), mass_ratio = Uniform(name='mass_ratio', minimum=0.125, maximum=1), a_1 = 0.6, a_2 = 0.6, tilt_1 = 0.0, tilt_2 = 0.0, phi_12 = 0.0, phi_jl = 0.0, luminosity_distance = 800, dec =  0.1, ra =  0.1, theta_jn =  0.1, psi =  0.1, phase =  0.1}\", 'enforce_signal_duration': True, 'single_postprocessing_executable': None, 'single_postprocessing_arguments': None, 'n_parallel': 1, 'reweighting_configuration': None, 'reweight_nested_samples': True, 'waveform_generator': 'bilby.gw.waveform_generator.LALCBCWaveformGenerator', 'reference_frequency': 20, 'waveform_approximant': 'TaylorF2', 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'numerical_relativity_file': None, 'waveform_arguments_dict': None, 'mode_array': None, 'frequency_domain_source_model': 'lal_binary_black_hole', 'conversion_function': 'convert_to_lal_binary_black_hole_parameters', 'generation_function': None, 'sampler': 'dynesty', 'nodes': 1, 'ntasks_per_node': 2, 'time': '24:00:00', 'mem_per_cpu': '2G', 'extra_lines': None, 'slurm_extra_lines': None, 'idx': 0, 'data_dump_file': None, 'accounting': None, 'local': False, 'local_generation': False, 'local_plot': False, 'request_memory': 8.0, 'request_memory_generation': None, 'request_cpus': 1, 'scheduler': 'condor', 'scheduler_args': None, 'scheduler_module': None, 'scheduler_env': None, 'transfer_files': True, 'osg': False, 'plot_calibration': False, 'plot_corner': False, 'plot_marginal': False, 'plot_skymap': False, 'plot_waveform': False, 'plot_format': 'png', 'email': None, 'postprocessing_executable': None, 'postprocessing_arguments': None, 'sampler_kwargs': 'DynestyDefault'}",
+  "unknown_command_line_args": "[]",
+  "injection_parameters": "{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 800.0, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}",
+  "bilby_version": "2.2.2",
+  "bilby_pipe_version": "1.3.0",
+  "config_file": "config.ini",
+  "data_dump_file": "outdir/data/test_data_dump.pickle",
+  "parallel_bilby_version": "2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200",
+  "dynesty_version": "2.1.3",
+  "lalsimulation_version": "5.3.1"
+}
+13:44 INFO    : Complete ini written: outdir/test_config_complete.ini
+13:44 INFO    : Setup complete, now run:
+ $ bash outdir/submit/bash_test.sh
+13:46 INFO    : bilby_version version: 2.2.2
+13:46 INFO    : bilby_pipe_version version: 1.3.0
+13:46 INFO    : parallel_bilby_version version: 2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200
+13:46 INFO    : dynesty_version version: 2.1.3
+13:46 INFO    : lalsimulation_version version: 5.3.1
+13:46 INFO    : Generation seed set to 848771
+13:46 INFO    : Injecting waveform with 
+13:46 INFO    : minimum_frequency = 20.0
+13:46 INFO    : maximum_frequency = 2048.0
+13:46 INFO    : trigger_time = 0.0
+13:46 INFO    : start_time = -2.0
+13:46 INFO    : duration = 4.0
+13:46 INFO    : Setting strain data from zero noise
+13:46 INFO    : Using waveform arguments: {'reference_frequency': 20.0, 'waveform_approximant': 'TaylorF2', 'minimum_frequency': 20.0, 'maximum_frequency': 2048.0, 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'mode_array': None, 'numerical_relativity_file': None}
+13:46 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:46 INFO    : Injected signal in H1:
+13:46 INFO    :   optimal SNR = 43.80
+13:46 INFO    :   matched filter SNR = 43.80+0.00j
+13:46 INFO    :   chirp_mass = 28.0
+13:46 INFO    :   mass_ratio = 0.85
+13:46 INFO    :   a_1 = 0.6
+13:46 INFO    :   a_2 = 0.6
+13:46 INFO    :   tilt_1 = 0.0
+13:46 INFO    :   tilt_2 = 0.0
+13:46 INFO    :   phi_12 = 0.0
+13:46 INFO    :   phi_jl = 0.0
+13:46 INFO    :   luminosity_distance = 800.0
+13:46 INFO    :   dec = 0.1
+13:46 INFO    :   ra = 0.1
+13:46 INFO    :   theta_jn = 0.1
+13:46 INFO    :   psi = 0.1
+13:46 INFO    :   phase = 0.1
+13:46 INFO    :   geocent_time = 0.0
+13:46 INFO    : Injected signal in L1:
+13:46 INFO    :   optimal SNR = 52.29
+13:46 INFO    :   matched filter SNR = 52.29-0.00j
+13:46 INFO    :   chirp_mass = 28.0
+13:46 INFO    :   mass_ratio = 0.85
+13:46 INFO    :   a_1 = 0.6
+13:46 INFO    :   a_2 = 0.6
+13:46 INFO    :   tilt_1 = 0.0
+13:46 INFO    :   tilt_2 = 0.0
+13:46 INFO    :   phi_12 = 0.0
+13:46 INFO    :   phi_jl = 0.0
+13:46 INFO    :   luminosity_distance = 800.0
+13:46 INFO    :   dec = 0.1
+13:46 INFO    :   ra = 0.1
+13:46 INFO    :   theta_jn = 0.1
+13:46 INFO    :   psi = 0.1
+13:46 INFO    :   phase = 0.1
+13:46 INFO    :   geocent_time = 0.0
+13:46 INFO    : Injected signal in V1:
+13:46 INFO    :   optimal SNR = 22.75
+13:46 INFO    :   matched filter SNR = 22.75-0.00j
+13:46 INFO    :   chirp_mass = 28.0
+13:46 INFO    :   mass_ratio = 0.85
+13:46 INFO    :   a_1 = 0.6
+13:46 INFO    :   a_2 = 0.6
+13:46 INFO    :   tilt_1 = 0.0
+13:46 INFO    :   tilt_2 = 0.0
+13:46 INFO    :   phi_12 = 0.0
+13:46 INFO    :   phi_jl = 0.0
+13:46 INFO    :   luminosity_distance = 800.0
+13:46 INFO    :   dec = 0.1
+13:46 INFO    :   ra = 0.1
+13:46 INFO    :   theta_jn = 0.1
+13:46 INFO    :   psi = 0.1
+13:46 INFO    :   phase = 0.1
+13:46 INFO    :   geocent_time = 0.0
+13:46 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:46 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:46 INFO    : Setting up likelihood with marginalizations: distance=False, time=False, phase=False.
+13:46 INFO    : Setting sampling-seed=1454
+13:46 INFO    : prior-file save at outdir/data/test_prior.json
+13:46 INFO    : Initial meta_data ={
+  "command_line_args": "{'nlive': 1024, 'dlogz': 0.1, 'n_effective': inf, 'dynesty_sample': 'acceptance-walk', 'dynesty_bound': 'live', 'walks': 100, 'proposals': None, 'maxmcmc': 5000, 'nact': 2, 'naccept': 60, 'min_eff': 10, 'facc': 0.5, 'enlarge': 1.5, 'n_check_point': 1000, 'max_its': 10000000000, 'max_run_time': 10000000000.0, 'fast_mpi': False, 'mpi_timing': False, 'mpi_timing_interval': 0, 'nestcheck': False, 'rejection_sample_posterior': True, 'bilby_zero_likelihood_mode': False, 'sampling_seed': None, 'clean': False, 'no_plot': False, 'do_not_save_bounds_in_resume': True, 'check_point_deltaT': 3600, 'rotate_checkpoints': False, 'ini': 'config.ini', 'verbose': False, 'calibration_model': None, 'spline_calibration_envelope_dict': None, 'spline_calibration_nodes': 10, 'spline_calibration_amplitude_uncertainty_dict': None, 'spline_calibration_phase_uncertainty_dict': None, 'calibration_prior_boundary': 'reflective', 'ignore_gwpy_data_quality_check': True, 'gps_tuple': None, 'gps_file': None, 'timeslide_file': None, 'timeslide_dict': None, 'trigger_time': '0', 'n_simulation': 0, 'data_dict': None, 'data_format': None, 'allow_tape': True, 'channel_dict': None, 'frame_type_dict': None, 'data_find_url': 'https://datafind.ligo.org', 'data_find_urltype': 'osdf', 'gaussian_noise': False, 'zero_noise': True, 'coherence_test': False, 'detectors': ['H1', 'L1', 'V1'], 'duration': 4.0, 'generation_seed': None, 'psd_dict': None, 'psd_fractional_overlap': 0.5, 'post_trigger_duration': 2.0, 'sampling_frequency': 4096, 'psd_length': 32, 'psd_maximum_duration': 1024, 'psd_method': 'median', 'psd_start_time': None, 'maximum_frequency': None, 'minimum_frequency': '20', 'tukey_roll_off': 0.4, 'resampling_method': 'lal', 'injection': False, 'injection_dict': \"{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 800, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}\", 'injection_file': None, 'injection_numbers': None, 'injection_waveform_approximant': None, 'injection_frequency_domain_source_model': None, 'injection_waveform_arguments': None, 'accounting_user': None, 'label': 'test', 'outdir': 'outdir', 'overwrite_outdir': False, 'periodic_restart_time': 28800, 'request_disk': 5, 'conda_env': None, 'scheduler_analysis_time': '7-00:00:00', 'submit': False, 'condor_job_priority': 0, 'additional_transfer_paths': None, 'environment_variables': None, 'getenv': None, 'disable_hdf5_locking': False, 'log_directory': None, 'desired_sites': None, 'analysis_executable': None, 'analysis_executable_parser': None, 'calibration_marginalization': False, 'distance_marginalization': False, 'distance_marginalization_lookup_table': None, 'phase_marginalization': False, 'time_marginalization': False, 'jitter_time': True, 'reference_frame': 'sky', 'time_reference': 'geocent', 'likelihood_type': 'bilby.gw.likelihood.GravitationalWaveTransient', 'calibration_lookup_table': None, 'number_of_response_curves': 1000, 'roq_folder': None, 'roq_linear_matrix': None, 'roq_quadratic_matrix': None, 'roq_weights': None, 'roq_weight_format': 'hdf5', 'roq_scale_factor': 1, 'fiducial_parameters': \"{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 800, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}\", 'update_fiducial_parameters': False, 'epsilon': 0.025, 'extra_likelihood_kwargs': None, 'plot_trace': False, 'plot_data': False, 'plot_injection': False, 'plot_spectrogram': False, 'create_summary': False, 'notification': 'Never', 'queue': None, 'existing_dir': None, 'webdir': None, 'summarypages_arguments': None, 'result_format': 'hdf5', 'final_result': True, 'final_result_nsamples': 20000, 'default_prior': 'BBHPriorDict', 'deltaT': 0.2, 'prior_file': None, 'prior_dict': \"{chirp-mass: Uniform(name='chirp_mass', minimum=25, maximum=31), mass_ratio = Uniform(name='mass_ratio', minimum=0.125, maximum=1), a_1 = 0.6, a_2 = 0.6, tilt_1 = 0.0, tilt_2 = 0.0, phi_12 = 0.0, phi_jl = 0.0, luminosity_distance = 800, dec =  0.1, ra =  0.1, theta_jn =  0.1, psi =  0.1, phase =  0.1}\", 'enforce_signal_duration': True, 'single_postprocessing_executable': None, 'single_postprocessing_arguments': None, 'n_parallel': 1, 'reweighting_configuration': None, 'reweight_nested_samples': True, 'waveform_generator': 'bilby.gw.waveform_generator.LALCBCWaveformGenerator', 'reference_frequency': 20, 'waveform_approximant': 'TaylorF2', 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'numerical_relativity_file': None, 'waveform_arguments_dict': None, 'mode_array': None, 'frequency_domain_source_model': 'lal_binary_black_hole', 'conversion_function': 'convert_to_lal_binary_black_hole_parameters', 'generation_function': None, 'sampler': 'dynesty', 'nodes': 1, 'ntasks_per_node': 2, 'time': '24:00:00', 'mem_per_cpu': '2G', 'extra_lines': None, 'slurm_extra_lines': None, 'idx': 0, 'data_dump_file': None, 'accounting': None, 'local': False, 'local_generation': False, 'local_plot': False, 'request_memory': 8.0, 'request_memory_generation': None, 'request_cpus': 1, 'scheduler': 'condor', 'scheduler_args': None, 'scheduler_module': None, 'scheduler_env': None, 'transfer_files': True, 'osg': False, 'plot_calibration': False, 'plot_corner': False, 'plot_marginal': False, 'plot_skymap': False, 'plot_waveform': False, 'plot_format': 'png', 'email': None, 'postprocessing_executable': None, 'postprocessing_arguments': None, 'sampler_kwargs': 'DynestyDefault'}",
+  "unknown_command_line_args": "[]",
+  "injection_parameters": "{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 800.0, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}",
+  "bilby_version": "2.2.2",
+  "bilby_pipe_version": "1.3.0",
+  "config_file": "config.ini",
+  "data_dump_file": "outdir/data/test_data_dump.pickle",
+  "parallel_bilby_version": "2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200",
+  "dynesty_version": "2.1.3",
+  "lalsimulation_version": "5.3.1"
+}
+13:46 INFO    : Complete ini written: outdir/test_config_complete.ini
+13:46 INFO    : Setup complete, now run:
+ $ bash outdir/submit/bash_test.sh
+13:46 INFO    : bilby_version version: 2.2.2
+13:46 INFO    : bilby_pipe_version version: 1.3.0
+13:46 INFO    : parallel_bilby_version version: 2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200
+13:46 INFO    : dynesty_version version: 2.1.3
+13:46 INFO    : lalsimulation_version version: 5.3.1
+13:46 INFO    : Generation seed set to 766161
+13:46 INFO    : Injecting waveform with 
+13:46 INFO    : minimum_frequency = 20.0
+13:46 INFO    : maximum_frequency = 2048.0
+13:46 INFO    : trigger_time = 0.0
+13:46 INFO    : start_time = -2.0
+13:46 INFO    : duration = 4.0
+13:46 INFO    : Setting strain data from zero noise
+13:46 INFO    : Using waveform arguments: {'reference_frequency': 20.0, 'waveform_approximant': 'TaylorF2', 'minimum_frequency': 20.0, 'maximum_frequency': 2048.0, 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'mode_array': None, 'numerical_relativity_file': None}
+13:46 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:46 INFO    : Injected signal in H1:
+13:46 INFO    :   optimal SNR = 35.04
+13:46 INFO    :   matched filter SNR = 35.04-0.00j
+13:46 INFO    :   chirp_mass = 28.0
+13:46 INFO    :   mass_ratio = 0.85
+13:46 INFO    :   a_1 = 0.6
+13:46 INFO    :   a_2 = 0.6
+13:46 INFO    :   tilt_1 = 0.0
+13:46 INFO    :   tilt_2 = 0.0
+13:46 INFO    :   phi_12 = 0.0
+13:46 INFO    :   phi_jl = 0.0
+13:46 INFO    :   luminosity_distance = 1000.0
+13:46 INFO    :   dec = 0.1
+13:46 INFO    :   ra = 0.1
+13:46 INFO    :   theta_jn = 0.1
+13:46 INFO    :   psi = 0.1
+13:46 INFO    :   phase = 0.1
+13:46 INFO    :   geocent_time = 0.0
+13:46 INFO    : Injected signal in L1:
+13:46 INFO    :   optimal SNR = 41.83
+13:46 INFO    :   matched filter SNR = 41.83-0.00j
+13:46 INFO    :   chirp_mass = 28.0
+13:46 INFO    :   mass_ratio = 0.85
+13:46 INFO    :   a_1 = 0.6
+13:46 INFO    :   a_2 = 0.6
+13:46 INFO    :   tilt_1 = 0.0
+13:46 INFO    :   tilt_2 = 0.0
+13:46 INFO    :   phi_12 = 0.0
+13:46 INFO    :   phi_jl = 0.0
+13:46 INFO    :   luminosity_distance = 1000.0
+13:46 INFO    :   dec = 0.1
+13:46 INFO    :   ra = 0.1
+13:46 INFO    :   theta_jn = 0.1
+13:46 INFO    :   psi = 0.1
+13:46 INFO    :   phase = 0.1
+13:46 INFO    :   geocent_time = 0.0
+13:46 INFO    : Injected signal in V1:
+13:46 INFO    :   optimal SNR = 18.20
+13:46 INFO    :   matched filter SNR = 18.20-0.00j
+13:46 INFO    :   chirp_mass = 28.0
+13:46 INFO    :   mass_ratio = 0.85
+13:46 INFO    :   a_1 = 0.6
+13:46 INFO    :   a_2 = 0.6
+13:46 INFO    :   tilt_1 = 0.0
+13:46 INFO    :   tilt_2 = 0.0
+13:46 INFO    :   phi_12 = 0.0
+13:46 INFO    :   phi_jl = 0.0
+13:46 INFO    :   luminosity_distance = 1000.0
+13:46 INFO    :   dec = 0.1
+13:46 INFO    :   ra = 0.1
+13:46 INFO    :   theta_jn = 0.1
+13:46 INFO    :   psi = 0.1
+13:46 INFO    :   phase = 0.1
+13:46 INFO    :   geocent_time = 0.0
+13:47 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:47 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:47 INFO    : Setting up likelihood with marginalizations: distance=False, time=False, phase=False.
+13:47 INFO    : Setting sampling-seed=907333
+13:47 INFO    : prior-file save at outdir/data/test_prior.json
+13:47 INFO    : Initial meta_data ={
+  "command_line_args": "{'nlive': 1024, 'dlogz': 0.1, 'n_effective': inf, 'dynesty_sample': 'acceptance-walk', 'dynesty_bound': 'live', 'walks': 100, 'proposals': None, 'maxmcmc': 5000, 'nact': 2, 'naccept': 60, 'min_eff': 10, 'facc': 0.5, 'enlarge': 1.5, 'n_check_point': 1000, 'max_its': 10000000000, 'max_run_time': 10000000000.0, 'fast_mpi': False, 'mpi_timing': False, 'mpi_timing_interval': 0, 'nestcheck': False, 'rejection_sample_posterior': True, 'bilby_zero_likelihood_mode': False, 'sampling_seed': None, 'clean': False, 'no_plot': False, 'do_not_save_bounds_in_resume': True, 'check_point_deltaT': 3600, 'rotate_checkpoints': False, 'ini': 'config.ini', 'verbose': False, 'calibration_model': None, 'spline_calibration_envelope_dict': None, 'spline_calibration_nodes': 10, 'spline_calibration_amplitude_uncertainty_dict': None, 'spline_calibration_phase_uncertainty_dict': None, 'calibration_prior_boundary': 'reflective', 'ignore_gwpy_data_quality_check': True, 'gps_tuple': None, 'gps_file': None, 'timeslide_file': None, 'timeslide_dict': None, 'trigger_time': '0', 'n_simulation': 0, 'data_dict': None, 'data_format': None, 'allow_tape': True, 'channel_dict': None, 'frame_type_dict': None, 'data_find_url': 'https://datafind.ligo.org', 'data_find_urltype': 'osdf', 'gaussian_noise': False, 'zero_noise': True, 'coherence_test': False, 'detectors': ['H1', 'L1', 'V1'], 'duration': 4.0, 'generation_seed': None, 'psd_dict': None, 'psd_fractional_overlap': 0.5, 'post_trigger_duration': 2.0, 'sampling_frequency': 4096, 'psd_length': 32, 'psd_maximum_duration': 1024, 'psd_method': 'median', 'psd_start_time': None, 'maximum_frequency': None, 'minimum_frequency': '20', 'tukey_roll_off': 0.4, 'resampling_method': 'lal', 'injection': False, 'injection_dict': \"{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 1000, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}\", 'injection_file': None, 'injection_numbers': None, 'injection_waveform_approximant': None, 'injection_frequency_domain_source_model': None, 'injection_waveform_arguments': None, 'accounting_user': None, 'label': 'test', 'outdir': 'outdir', 'overwrite_outdir': False, 'periodic_restart_time': 28800, 'request_disk': 5, 'conda_env': None, 'scheduler_analysis_time': '7-00:00:00', 'submit': False, 'condor_job_priority': 0, 'additional_transfer_paths': None, 'environment_variables': None, 'getenv': None, 'disable_hdf5_locking': False, 'log_directory': None, 'desired_sites': None, 'analysis_executable': None, 'analysis_executable_parser': None, 'calibration_marginalization': False, 'distance_marginalization': False, 'distance_marginalization_lookup_table': None, 'phase_marginalization': False, 'time_marginalization': False, 'jitter_time': True, 'reference_frame': 'sky', 'time_reference': 'geocent', 'likelihood_type': 'bilby.gw.likelihood.GravitationalWaveTransient', 'calibration_lookup_table': None, 'number_of_response_curves': 1000, 'roq_folder': None, 'roq_linear_matrix': None, 'roq_quadratic_matrix': None, 'roq_weights': None, 'roq_weight_format': 'hdf5', 'roq_scale_factor': 1, 'fiducial_parameters': \"{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 1000, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}\", 'update_fiducial_parameters': False, 'epsilon': 0.025, 'extra_likelihood_kwargs': None, 'plot_trace': False, 'plot_data': False, 'plot_injection': False, 'plot_spectrogram': False, 'create_summary': False, 'notification': 'Never', 'queue': None, 'existing_dir': None, 'webdir': None, 'summarypages_arguments': None, 'result_format': 'hdf5', 'final_result': True, 'final_result_nsamples': 20000, 'default_prior': 'BBHPriorDict', 'deltaT': 0.2, 'prior_file': None, 'prior_dict': \"{chirp-mass: Uniform(name='chirp_mass', minimum=25, maximum=31), mass_ratio = Uniform(name='mass_ratio', minimum=0.125, maximum=1), a_1 = 0.6, a_2 = 0.6, tilt_1 = 0.0, tilt_2 = 0.0, phi_12 = 0.0, phi_jl = 0.0, luminosity_distance = 1000, dec =  0.1, ra =  0.1, theta_jn =  0.1, psi =  0.1, phase =  0.1}\", 'enforce_signal_duration': True, 'single_postprocessing_executable': None, 'single_postprocessing_arguments': None, 'n_parallel': 1, 'reweighting_configuration': None, 'reweight_nested_samples': True, 'waveform_generator': 'bilby.gw.waveform_generator.LALCBCWaveformGenerator', 'reference_frequency': 20, 'waveform_approximant': 'TaylorF2', 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'numerical_relativity_file': None, 'waveform_arguments_dict': None, 'mode_array': None, 'frequency_domain_source_model': 'lal_binary_black_hole', 'conversion_function': 'convert_to_lal_binary_black_hole_parameters', 'generation_function': None, 'sampler': 'dynesty', 'nodes': 1, 'ntasks_per_node': 2, 'time': '24:00:00', 'mem_per_cpu': '2G', 'extra_lines': None, 'slurm_extra_lines': None, 'idx': 0, 'data_dump_file': None, 'accounting': None, 'local': False, 'local_generation': False, 'local_plot': False, 'request_memory': 8.0, 'request_memory_generation': None, 'request_cpus': 1, 'scheduler': 'condor', 'scheduler_args': None, 'scheduler_module': None, 'scheduler_env': None, 'transfer_files': True, 'osg': False, 'plot_calibration': False, 'plot_corner': False, 'plot_marginal': False, 'plot_skymap': False, 'plot_waveform': False, 'plot_format': 'png', 'email': None, 'postprocessing_executable': None, 'postprocessing_arguments': None, 'sampler_kwargs': 'DynestyDefault'}",
+  "unknown_command_line_args": "[]",
+  "injection_parameters": "{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 1000.0, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}",
+  "bilby_version": "2.2.2",
+  "bilby_pipe_version": "1.3.0",
+  "config_file": "config.ini",
+  "data_dump_file": "outdir/data/test_data_dump.pickle",
+  "parallel_bilby_version": "2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200",
+  "dynesty_version": "2.1.3",
+  "lalsimulation_version": "5.3.1"
+}
+13:47 INFO    : Complete ini written: outdir/test_config_complete.ini
+13:47 INFO    : Setup complete, now run:
+ $ bash outdir/submit/bash_test.sh
+13:48 INFO    : bilby_version version: 2.2.2
+13:48 INFO    : bilby_pipe_version version: 1.3.0
+13:48 INFO    : parallel_bilby_version version: 2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200
+13:48 INFO    : dynesty_version version: 2.1.3
+13:48 INFO    : lalsimulation_version version: 5.3.1
+13:48 INFO    : Generation seed set to 250204
+13:48 INFO    : Injecting waveform with 
+13:48 INFO    : minimum_frequency = 20.0
+13:48 INFO    : maximum_frequency = 2048.0
+13:48 INFO    : trigger_time = 0.0
+13:48 INFO    : start_time = -2.0
+13:48 INFO    : duration = 4.0
+13:48 INFO    : Setting strain data from zero noise
+13:48 INFO    : Using waveform arguments: {'reference_frequency': 20.0, 'waveform_approximant': 'TaylorF2', 'minimum_frequency': 20.0, 'maximum_frequency': 2048.0, 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'mode_array': None, 'numerical_relativity_file': None}
+13:48 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:48 INFO    : Injected signal in H1:
+13:48 INFO    :   optimal SNR = 35.04
+13:48 INFO    :   matched filter SNR = 35.04-0.00j
+13:48 INFO    :   chirp_mass = 28.0
+13:48 INFO    :   mass_ratio = 0.85
+13:48 INFO    :   a_1 = 0.6
+13:48 INFO    :   a_2 = 0.6
+13:48 INFO    :   tilt_1 = 0.0
+13:48 INFO    :   tilt_2 = 0.0
+13:48 INFO    :   phi_12 = 0.0
+13:48 INFO    :   phi_jl = 0.0
+13:48 INFO    :   luminosity_distance = 1000.0
+13:48 INFO    :   dec = 0.1
+13:48 INFO    :   ra = 0.1
+13:48 INFO    :   theta_jn = 0.1
+13:48 INFO    :   psi = 0.1
+13:48 INFO    :   phase = 0.1
+13:48 INFO    :   geocent_time = 0.0
+13:48 INFO    : Injected signal in L1:
+13:48 INFO    :   optimal SNR = 41.83
+13:48 INFO    :   matched filter SNR = 41.83-0.00j
+13:48 INFO    :   chirp_mass = 28.0
+13:48 INFO    :   mass_ratio = 0.85
+13:48 INFO    :   a_1 = 0.6
+13:48 INFO    :   a_2 = 0.6
+13:48 INFO    :   tilt_1 = 0.0
+13:48 INFO    :   tilt_2 = 0.0
+13:48 INFO    :   phi_12 = 0.0
+13:48 INFO    :   phi_jl = 0.0
+13:48 INFO    :   luminosity_distance = 1000.0
+13:48 INFO    :   dec = 0.1
+13:48 INFO    :   ra = 0.1
+13:48 INFO    :   theta_jn = 0.1
+13:48 INFO    :   psi = 0.1
+13:48 INFO    :   phase = 0.1
+13:48 INFO    :   geocent_time = 0.0
+13:48 INFO    : Injected signal in V1:
+13:48 INFO    :   optimal SNR = 18.20
+13:48 INFO    :   matched filter SNR = 18.20-0.00j
+13:48 INFO    :   chirp_mass = 28.0
+13:48 INFO    :   mass_ratio = 0.85
+13:48 INFO    :   a_1 = 0.6
+13:48 INFO    :   a_2 = 0.6
+13:48 INFO    :   tilt_1 = 0.0
+13:48 INFO    :   tilt_2 = 0.0
+13:48 INFO    :   phi_12 = 0.0
+13:48 INFO    :   phi_jl = 0.0
+13:48 INFO    :   luminosity_distance = 1000.0
+13:48 INFO    :   dec = 0.1
+13:48 INFO    :   ra = 0.1
+13:48 INFO    :   theta_jn = 0.1
+13:48 INFO    :   psi = 0.1
+13:48 INFO    :   phase = 0.1
+13:48 INFO    :   geocent_time = 0.0
+13:48 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:49 INFO    : bilby_version version: 2.2.2
+13:49 INFO    : bilby_pipe_version version: 1.3.0
+13:49 INFO    : parallel_bilby_version version: 2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200
+13:49 INFO    : dynesty_version version: 2.1.3
+13:49 INFO    : lalsimulation_version version: 5.3.1
+13:49 INFO    : Generation seed set to 686402
+13:49 INFO    : Injecting waveform with 
+13:49 INFO    : minimum_frequency = 20.0
+13:49 INFO    : maximum_frequency = 2048.0
+13:49 INFO    : trigger_time = 0.0
+13:49 INFO    : start_time = -2.0
+13:49 INFO    : duration = 4.0
+13:49 INFO    : Setting strain data from zero noise
+13:49 INFO    : Using waveform arguments: {'reference_frequency': 20.0, 'waveform_approximant': 'TaylorF2', 'minimum_frequency': 20.0, 'maximum_frequency': 2048.0, 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'mode_array': None, 'numerical_relativity_file': None}
+13:49 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:49 INFO    : Injected signal in H1:
+13:49 INFO    :   optimal SNR = 35.04
+13:49 INFO    :   matched filter SNR = 35.04-0.00j
+13:49 INFO    :   chirp_mass = 28.0
+13:49 INFO    :   mass_ratio = 0.85
+13:49 INFO    :   a_1 = 0.6
+13:49 INFO    :   a_2 = 0.6
+13:49 INFO    :   tilt_1 = 0.0
+13:49 INFO    :   tilt_2 = 0.0
+13:49 INFO    :   phi_12 = 0.0
+13:49 INFO    :   phi_jl = 0.0
+13:49 INFO    :   luminosity_distance = 1000.0
+13:49 INFO    :   dec = 0.1
+13:49 INFO    :   ra = 0.1
+13:49 INFO    :   theta_jn = 0.1
+13:49 INFO    :   psi = 0.1
+13:49 INFO    :   phase = 0.1
+13:49 INFO    :   geocent_time = 0.0
+13:49 INFO    : Injected signal in L1:
+13:49 INFO    :   optimal SNR = 41.83
+13:49 INFO    :   matched filter SNR = 41.83-0.00j
+13:49 INFO    :   chirp_mass = 28.0
+13:49 INFO    :   mass_ratio = 0.85
+13:49 INFO    :   a_1 = 0.6
+13:49 INFO    :   a_2 = 0.6
+13:49 INFO    :   tilt_1 = 0.0
+13:49 INFO    :   tilt_2 = 0.0
+13:49 INFO    :   phi_12 = 0.0
+13:49 INFO    :   phi_jl = 0.0
+13:49 INFO    :   luminosity_distance = 1000.0
+13:49 INFO    :   dec = 0.1
+13:49 INFO    :   ra = 0.1
+13:49 INFO    :   theta_jn = 0.1
+13:49 INFO    :   psi = 0.1
+13:49 INFO    :   phase = 0.1
+13:49 INFO    :   geocent_time = 0.0
+13:49 INFO    : Injected signal in V1:
+13:49 INFO    :   optimal SNR = 18.20
+13:49 INFO    :   matched filter SNR = 18.20-0.00j
+13:49 INFO    :   chirp_mass = 28.0
+13:49 INFO    :   mass_ratio = 0.85
+13:49 INFO    :   a_1 = 0.6
+13:49 INFO    :   a_2 = 0.6
+13:49 INFO    :   tilt_1 = 0.0
+13:49 INFO    :   tilt_2 = 0.0
+13:49 INFO    :   phi_12 = 0.0
+13:49 INFO    :   phi_jl = 0.0
+13:49 INFO    :   luminosity_distance = 1000.0
+13:49 INFO    :   dec = 0.1
+13:49 INFO    :   ra = 0.1
+13:49 INFO    :   theta_jn = 0.1
+13:49 INFO    :   psi = 0.1
+13:49 INFO    :   phase = 0.1
+13:49 INFO    :   geocent_time = 0.0
+13:49 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:49 INFO    : bilby_version version: 2.2.2
+13:49 INFO    : bilby_pipe_version version: 1.3.0
+13:49 INFO    : parallel_bilby_version version: 2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200
+13:49 INFO    : dynesty_version version: 2.1.3
+13:49 INFO    : lalsimulation_version version: 5.3.1
+13:49 INFO    : Generation seed set to 602804
+13:49 INFO    : Injecting waveform with 
+13:49 INFO    : minimum_frequency = 20.0
+13:49 INFO    : maximum_frequency = 2048.0
+13:49 INFO    : trigger_time = 0.0
+13:49 INFO    : start_time = -2.0
+13:49 INFO    : duration = 4.0
+13:49 INFO    : Setting strain data from zero noise
+13:49 INFO    : Using waveform arguments: {'reference_frequency': 20.0, 'waveform_approximant': 'TaylorF2', 'minimum_frequency': 20.0, 'maximum_frequency': 2048.0, 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'mode_array': None, 'numerical_relativity_file': None}
+13:49 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:49 INFO    : Injected signal in H1:
+13:49 INFO    :   optimal SNR = 35.04
+13:49 INFO    :   matched filter SNR = 35.04-0.00j
+13:49 INFO    :   chirp_mass = 28.0
+13:49 INFO    :   mass_ratio = 0.85
+13:49 INFO    :   a_1 = 0.6
+13:49 INFO    :   a_2 = 0.6
+13:49 INFO    :   tilt_1 = 0.0
+13:49 INFO    :   tilt_2 = 0.0
+13:49 INFO    :   phi_12 = 0.0
+13:49 INFO    :   phi_jl = 0.0
+13:49 INFO    :   luminosity_distance = 1000.0
+13:49 INFO    :   dec = 0.1
+13:49 INFO    :   ra = 0.1
+13:49 INFO    :   theta_jn = 0.1
+13:49 INFO    :   psi = 0.1
+13:49 INFO    :   phase = 0.1
+13:49 INFO    :   geocent_time = 0.0
+13:49 INFO    : Injected signal in L1:
+13:49 INFO    :   optimal SNR = 41.83
+13:49 INFO    :   matched filter SNR = 41.83-0.00j
+13:49 INFO    :   chirp_mass = 28.0
+13:49 INFO    :   mass_ratio = 0.85
+13:49 INFO    :   a_1 = 0.6
+13:49 INFO    :   a_2 = 0.6
+13:49 INFO    :   tilt_1 = 0.0
+13:49 INFO    :   tilt_2 = 0.0
+13:49 INFO    :   phi_12 = 0.0
+13:49 INFO    :   phi_jl = 0.0
+13:49 INFO    :   luminosity_distance = 1000.0
+13:49 INFO    :   dec = 0.1
+13:49 INFO    :   ra = 0.1
+13:49 INFO    :   theta_jn = 0.1
+13:49 INFO    :   psi = 0.1
+13:49 INFO    :   phase = 0.1
+13:49 INFO    :   geocent_time = 0.0
+13:49 INFO    : Injected signal in V1:
+13:49 INFO    :   optimal SNR = 18.20
+13:49 INFO    :   matched filter SNR = 18.20-0.00j
+13:49 INFO    :   chirp_mass = 28.0
+13:49 INFO    :   mass_ratio = 0.85
+13:49 INFO    :   a_1 = 0.6
+13:49 INFO    :   a_2 = 0.6
+13:49 INFO    :   tilt_1 = 0.0
+13:49 INFO    :   tilt_2 = 0.0
+13:49 INFO    :   phi_12 = 0.0
+13:49 INFO    :   phi_jl = 0.0
+13:49 INFO    :   luminosity_distance = 1000.0
+13:49 INFO    :   dec = 0.1
+13:49 INFO    :   ra = 0.1
+13:49 INFO    :   theta_jn = 0.1
+13:49 INFO    :   psi = 0.1
+13:49 INFO    :   phase = 0.1
+13:49 INFO    :   geocent_time = 0.0
+13:49 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:49 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:49 INFO    : Setting up likelihood with marginalizations: distance=False, time=False, phase=False.
+13:49 INFO    : Setting sampling-seed=413320
+13:49 INFO    : prior-file save at outdir/data/test_prior.json
+13:49 INFO    : Initial meta_data ={
+  "command_line_args": "{'nlive': 1024, 'dlogz': 0.1, 'n_effective': inf, 'dynesty_sample': 'acceptance-walk', 'dynesty_bound': 'live', 'walks': 100, 'proposals': None, 'maxmcmc': 5000, 'nact': 2, 'naccept': 60, 'min_eff': 10, 'facc': 0.5, 'enlarge': 1.5, 'n_check_point': 1000, 'max_its': 10000000000, 'max_run_time': 10000000000.0, 'fast_mpi': False, 'mpi_timing': False, 'mpi_timing_interval': 0, 'nestcheck': False, 'rejection_sample_posterior': True, 'bilby_zero_likelihood_mode': False, 'sampling_seed': None, 'clean': False, 'no_plot': False, 'do_not_save_bounds_in_resume': True, 'check_point_deltaT': 3600, 'rotate_checkpoints': False, 'ini': 'config.ini', 'verbose': False, 'calibration_model': None, 'spline_calibration_envelope_dict': None, 'spline_calibration_nodes': 10, 'spline_calibration_amplitude_uncertainty_dict': None, 'spline_calibration_phase_uncertainty_dict': None, 'calibration_prior_boundary': 'reflective', 'ignore_gwpy_data_quality_check': True, 'gps_tuple': None, 'gps_file': None, 'timeslide_file': None, 'timeslide_dict': None, 'trigger_time': '0', 'n_simulation': 0, 'data_dict': None, 'data_format': None, 'allow_tape': True, 'channel_dict': None, 'frame_type_dict': None, 'data_find_url': 'https://datafind.ligo.org', 'data_find_urltype': 'osdf', 'gaussian_noise': False, 'zero_noise': True, 'coherence_test': False, 'detectors': ['H1', 'L1', 'V1'], 'duration': 4.0, 'generation_seed': None, 'psd_dict': None, 'psd_fractional_overlap': 0.5, 'post_trigger_duration': 2.0, 'sampling_frequency': 4096, 'psd_length': 32, 'psd_maximum_duration': 1024, 'psd_method': 'median', 'psd_start_time': None, 'maximum_frequency': None, 'minimum_frequency': '20', 'tukey_roll_off': 0.4, 'resampling_method': 'lal', 'injection': False, 'injection_dict': \"{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 1000, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}\", 'injection_file': None, 'injection_numbers': None, 'injection_waveform_approximant': None, 'injection_frequency_domain_source_model': None, 'injection_waveform_arguments': None, 'accounting_user': None, 'label': 'test', 'outdir': 'outdir', 'overwrite_outdir': False, 'periodic_restart_time': 28800, 'request_disk': 5, 'conda_env': None, 'scheduler_analysis_time': '7-00:00:00', 'submit': False, 'condor_job_priority': 0, 'additional_transfer_paths': None, 'environment_variables': None, 'getenv': None, 'disable_hdf5_locking': False, 'log_directory': None, 'desired_sites': None, 'analysis_executable': None, 'analysis_executable_parser': None, 'calibration_marginalization': False, 'distance_marginalization': False, 'distance_marginalization_lookup_table': None, 'phase_marginalization': False, 'time_marginalization': False, 'jitter_time': True, 'reference_frame': 'sky', 'time_reference': 'geocent', 'likelihood_type': 'bilby.gw.likelihood.GravitationalWaveTransient', 'calibration_lookup_table': None, 'number_of_response_curves': 1000, 'roq_folder': None, 'roq_linear_matrix': None, 'roq_quadratic_matrix': None, 'roq_weights': None, 'roq_weight_format': 'hdf5', 'roq_scale_factor': 1, 'fiducial_parameters': None, 'update_fiducial_parameters': False, 'epsilon': 0.025, 'extra_likelihood_kwargs': None, 'plot_trace': False, 'plot_data': False, 'plot_injection': False, 'plot_spectrogram': False, 'create_summary': False, 'notification': 'Never', 'queue': None, 'existing_dir': None, 'webdir': None, 'summarypages_arguments': None, 'result_format': 'hdf5', 'final_result': True, 'final_result_nsamples': 20000, 'default_prior': 'BBHPriorDict', 'deltaT': 0.2, 'prior_file': None, 'prior_dict': \"{chirp-mass: Uniform(name='chirp_mass', minimum=25, maximum=31), mass_ratio = Uniform(name='mass_ratio', minimum=0.125, maximum=1), a_1 = 0.6, a_2 = 0.6, tilt_1 = 0.0, tilt_2 = 0.0, phi_12 = 0.0, phi_jl = 0.0, luminosity_distance = 1000, dec =  0.1, ra =  0.1, theta_jn =  0.1, psi =  0.1, phase =  0.1}\", 'enforce_signal_duration': True, 'single_postprocessing_executable': None, 'single_postprocessing_arguments': None, 'n_parallel': 1, 'reweighting_configuration': None, 'reweight_nested_samples': True, 'waveform_generator': 'bilby.gw.waveform_generator.LALCBCWaveformGenerator', 'reference_frequency': 20, 'waveform_approximant': 'TaylorF2', 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'numerical_relativity_file': None, 'waveform_arguments_dict': None, 'mode_array': None, 'frequency_domain_source_model': 'lal_binary_black_hole', 'conversion_function': 'convert_to_lal_binary_black_hole_parameters', 'generation_function': None, 'sampler': 'dynesty', 'nodes': 1, 'ntasks_per_node': 2, 'time': '24:00:00', 'mem_per_cpu': '2G', 'extra_lines': None, 'slurm_extra_lines': None, 'idx': 0, 'data_dump_file': None, 'accounting': None, 'local': False, 'local_generation': False, 'local_plot': False, 'request_memory': 8.0, 'request_memory_generation': None, 'request_cpus': 1, 'scheduler': 'condor', 'scheduler_args': None, 'scheduler_module': None, 'scheduler_env': None, 'transfer_files': True, 'osg': False, 'plot_calibration': False, 'plot_corner': False, 'plot_marginal': False, 'plot_skymap': False, 'plot_waveform': False, 'plot_format': 'png', 'email': None, 'postprocessing_executable': None, 'postprocessing_arguments': None, 'sampler_kwargs': 'DynestyDefault'}",
+  "unknown_command_line_args": "[]",
+  "injection_parameters": "{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 1000.0, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}",
+  "bilby_version": "2.2.2",
+  "bilby_pipe_version": "1.3.0",
+  "config_file": "config.ini",
+  "data_dump_file": "outdir/data/test_data_dump.pickle",
+  "parallel_bilby_version": "2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200",
+  "dynesty_version": "2.1.3",
+  "lalsimulation_version": "5.3.1"
+}
+13:49 INFO    : Complete ini written: outdir/test_config_complete.ini
+13:49 INFO    : Setup complete, now run:
+ $ bash outdir/submit/bash_test.sh
+13:50 INFO    : bilby_version version: 2.2.2
+13:50 INFO    : bilby_pipe_version version: 1.3.0
+13:50 INFO    : parallel_bilby_version version: 2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200
+13:50 INFO    : dynesty_version version: 2.1.3
+13:50 INFO    : lalsimulation_version version: 5.3.1
+13:50 INFO    : Generation seed set to 27530
+13:50 INFO    : Injecting waveform with 
+13:50 INFO    : minimum_frequency = 20.0
+13:50 INFO    : maximum_frequency = 2048.0
+13:50 INFO    : trigger_time = 0.0
+13:50 INFO    : start_time = -2.0
+13:50 INFO    : duration = 4.0
+13:50 INFO    : Simulating strain data from psd-colored noise
+13:50 INFO    : Using waveform arguments: {'reference_frequency': 20.0, 'waveform_approximant': 'TaylorF2', 'minimum_frequency': 20.0, 'maximum_frequency': 2048.0, 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'mode_array': None, 'numerical_relativity_file': None}
+13:50 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:50 INFO    : Injected signal in H1:
+13:50 INFO    :   optimal SNR = 35.04
+13:50 INFO    :   matched filter SNR = 34.44+0.17j
+13:50 INFO    :   chirp_mass = 28.0
+13:50 INFO    :   mass_ratio = 0.85
+13:50 INFO    :   a_1 = 0.6
+13:50 INFO    :   a_2 = 0.6
+13:50 INFO    :   tilt_1 = 0.0
+13:50 INFO    :   tilt_2 = 0.0
+13:50 INFO    :   phi_12 = 0.0
+13:50 INFO    :   phi_jl = 0.0
+13:50 INFO    :   luminosity_distance = 1000.0
+13:50 INFO    :   dec = 0.1
+13:50 INFO    :   ra = 0.1
+13:50 INFO    :   theta_jn = 0.1
+13:50 INFO    :   psi = 0.1
+13:50 INFO    :   phase = 0.1
+13:50 INFO    :   geocent_time = 0.0
+13:50 INFO    : Injected signal in L1:
+13:50 INFO    :   optimal SNR = 41.83
+13:50 INFO    :   matched filter SNR = 41.69+0.42j
+13:50 INFO    :   chirp_mass = 28.0
+13:50 INFO    :   mass_ratio = 0.85
+13:50 INFO    :   a_1 = 0.6
+13:50 INFO    :   a_2 = 0.6
+13:50 INFO    :   tilt_1 = 0.0
+13:50 INFO    :   tilt_2 = 0.0
+13:50 INFO    :   phi_12 = 0.0
+13:50 INFO    :   phi_jl = 0.0
+13:50 INFO    :   luminosity_distance = 1000.0
+13:50 INFO    :   dec = 0.1
+13:50 INFO    :   ra = 0.1
+13:50 INFO    :   theta_jn = 0.1
+13:50 INFO    :   psi = 0.1
+13:50 INFO    :   phase = 0.1
+13:50 INFO    :   geocent_time = 0.0
+13:50 INFO    : Injected signal in V1:
+13:50 INFO    :   optimal SNR = 18.20
+13:50 INFO    :   matched filter SNR = 18.07+2.14j
+13:50 INFO    :   chirp_mass = 28.0
+13:50 INFO    :   mass_ratio = 0.85
+13:50 INFO    :   a_1 = 0.6
+13:50 INFO    :   a_2 = 0.6
+13:50 INFO    :   tilt_1 = 0.0
+13:50 INFO    :   tilt_2 = 0.0
+13:50 INFO    :   phi_12 = 0.0
+13:50 INFO    :   phi_jl = 0.0
+13:50 INFO    :   luminosity_distance = 1000.0
+13:50 INFO    :   dec = 0.1
+13:50 INFO    :   ra = 0.1
+13:50 INFO    :   theta_jn = 0.1
+13:50 INFO    :   psi = 0.1
+13:50 INFO    :   phase = 0.1
+13:50 INFO    :   geocent_time = 0.0
+13:50 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:50 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:50 INFO    : Setting up likelihood with marginalizations: distance=False, time=False, phase=False.
+13:50 INFO    : Setting sampling-seed=847844
+13:50 INFO    : prior-file save at outdir/data/test_prior.json
+13:50 INFO    : Initial meta_data ={
+  "command_line_args": "{'nlive': 1024, 'dlogz': 0.1, 'n_effective': inf, 'dynesty_sample': 'acceptance-walk', 'dynesty_bound': 'live', 'walks': 100, 'proposals': None, 'maxmcmc': 5000, 'nact': 2, 'naccept': 60, 'min_eff': 10, 'facc': 0.5, 'enlarge': 1.5, 'n_check_point': 1000, 'max_its': 10000000000, 'max_run_time': 10000000000.0, 'fast_mpi': False, 'mpi_timing': False, 'mpi_timing_interval': 0, 'nestcheck': False, 'rejection_sample_posterior': True, 'bilby_zero_likelihood_mode': False, 'sampling_seed': None, 'clean': False, 'no_plot': False, 'do_not_save_bounds_in_resume': True, 'check_point_deltaT': 3600, 'rotate_checkpoints': False, 'ini': 'config.ini', 'verbose': False, 'calibration_model': None, 'spline_calibration_envelope_dict': None, 'spline_calibration_nodes': 10, 'spline_calibration_amplitude_uncertainty_dict': None, 'spline_calibration_phase_uncertainty_dict': None, 'calibration_prior_boundary': 'reflective', 'ignore_gwpy_data_quality_check': True, 'gps_tuple': None, 'gps_file': None, 'timeslide_file': None, 'timeslide_dict': None, 'trigger_time': '0', 'n_simulation': 0, 'data_dict': None, 'data_format': None, 'allow_tape': True, 'channel_dict': None, 'frame_type_dict': None, 'data_find_url': 'https://datafind.ligo.org', 'data_find_urltype': 'osdf', 'gaussian_noise': True, 'zero_noise': False, 'coherence_test': False, 'detectors': ['H1', 'L1', 'V1'], 'duration': 4.0, 'generation_seed': None, 'psd_dict': None, 'psd_fractional_overlap': 0.5, 'post_trigger_duration': 2.0, 'sampling_frequency': 4096, 'psd_length': 32, 'psd_maximum_duration': 1024, 'psd_method': 'median', 'psd_start_time': None, 'maximum_frequency': None, 'minimum_frequency': '20', 'tukey_roll_off': 0.4, 'resampling_method': 'lal', 'injection': False, 'injection_dict': \"{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 1000, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}\", 'injection_file': None, 'injection_numbers': None, 'injection_waveform_approximant': None, 'injection_frequency_domain_source_model': None, 'injection_waveform_arguments': None, 'accounting_user': None, 'label': 'test', 'outdir': 'outdir', 'overwrite_outdir': False, 'periodic_restart_time': 28800, 'request_disk': 5, 'conda_env': None, 'scheduler_analysis_time': '7-00:00:00', 'submit': False, 'condor_job_priority': 0, 'additional_transfer_paths': None, 'environment_variables': None, 'getenv': None, 'disable_hdf5_locking': False, 'log_directory': None, 'desired_sites': None, 'analysis_executable': None, 'analysis_executable_parser': None, 'calibration_marginalization': False, 'distance_marginalization': False, 'distance_marginalization_lookup_table': None, 'phase_marginalization': False, 'time_marginalization': False, 'jitter_time': True, 'reference_frame': 'sky', 'time_reference': 'geocent', 'likelihood_type': 'bilby.gw.likelihood.GravitationalWaveTransient', 'calibration_lookup_table': None, 'number_of_response_curves': 1000, 'roq_folder': None, 'roq_linear_matrix': None, 'roq_quadratic_matrix': None, 'roq_weights': None, 'roq_weight_format': 'hdf5', 'roq_scale_factor': 1, 'fiducial_parameters': None, 'update_fiducial_parameters': False, 'epsilon': 0.025, 'extra_likelihood_kwargs': None, 'plot_trace': False, 'plot_data': False, 'plot_injection': False, 'plot_spectrogram': False, 'create_summary': False, 'notification': 'Never', 'queue': None, 'existing_dir': None, 'webdir': None, 'summarypages_arguments': None, 'result_format': 'hdf5', 'final_result': True, 'final_result_nsamples': 20000, 'default_prior': 'BBHPriorDict', 'deltaT': 0.2, 'prior_file': None, 'prior_dict': \"{chirp-mass: Uniform(name='chirp_mass', minimum=25, maximum=31), mass_ratio = Uniform(name='mass_ratio', minimum=0.125, maximum=1), a_1 = 0.6, a_2 = 0.6, tilt_1 = 0.0, tilt_2 = 0.0, phi_12 = 0.0, phi_jl = 0.0, luminosity_distance = 1000, dec =  0.1, ra =  0.1, theta_jn =  0.1, psi =  0.1, phase =  0.1}\", 'enforce_signal_duration': True, 'single_postprocessing_executable': None, 'single_postprocessing_arguments': None, 'n_parallel': 1, 'reweighting_configuration': None, 'reweight_nested_samples': True, 'waveform_generator': 'bilby.gw.waveform_generator.LALCBCWaveformGenerator', 'reference_frequency': 20, 'waveform_approximant': 'TaylorF2', 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'numerical_relativity_file': None, 'waveform_arguments_dict': None, 'mode_array': None, 'frequency_domain_source_model': 'lal_binary_black_hole', 'conversion_function': 'convert_to_lal_binary_black_hole_parameters', 'generation_function': None, 'sampler': 'dynesty', 'nodes': 1, 'ntasks_per_node': 2, 'time': '24:00:00', 'mem_per_cpu': '2G', 'extra_lines': None, 'slurm_extra_lines': None, 'idx': 0, 'data_dump_file': None, 'accounting': None, 'local': False, 'local_generation': False, 'local_plot': False, 'request_memory': 8.0, 'request_memory_generation': None, 'request_cpus': 1, 'scheduler': 'condor', 'scheduler_args': None, 'scheduler_module': None, 'scheduler_env': None, 'transfer_files': True, 'osg': False, 'plot_calibration': False, 'plot_corner': False, 'plot_marginal': False, 'plot_skymap': False, 'plot_waveform': False, 'plot_format': 'png', 'email': None, 'postprocessing_executable': None, 'postprocessing_arguments': None, 'sampler_kwargs': 'DynestyDefault'}",
+  "unknown_command_line_args": "[]",
+  "injection_parameters": "{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 1000.0, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}",
+  "bilby_version": "2.2.2",
+  "bilby_pipe_version": "1.3.0",
+  "config_file": "config.ini",
+  "data_dump_file": "outdir/data/test_data_dump.pickle",
+  "parallel_bilby_version": "2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200",
+  "dynesty_version": "2.1.3",
+  "lalsimulation_version": "5.3.1"
+}
+13:50 INFO    : Complete ini written: outdir/test_config_complete.ini
+13:50 INFO    : Setup complete, now run:
+ $ bash outdir/submit/bash_test.sh
+13:51 INFO    : bilby_version version: 2.2.2
+13:51 INFO    : bilby_pipe_version version: 1.3.0
+13:51 INFO    : parallel_bilby_version version: 2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200
+13:51 INFO    : dynesty_version version: 2.1.3
+13:51 INFO    : lalsimulation_version version: 5.3.1
+13:51 INFO    : Generation seed set to 230165
+13:51 INFO    : Injecting waveform with 
+13:51 INFO    : minimum_frequency = 20.0
+13:51 INFO    : maximum_frequency = 2048.0
+13:51 INFO    : trigger_time = 0.0
+13:51 INFO    : start_time = -2.0
+13:51 INFO    : duration = 4.0
+13:51 INFO    : Simulating strain data from psd-colored noise
+13:51 INFO    : Using waveform arguments: {'reference_frequency': 20.0, 'waveform_approximant': 'TaylorF2', 'minimum_frequency': 20.0, 'maximum_frequency': 2048.0, 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'mode_array': None, 'numerical_relativity_file': None}
+13:51 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:51 INFO    : Injected signal in H1:
+13:51 INFO    :   optimal SNR = 35.04
+13:51 INFO    :   matched filter SNR = 36.72-0.71j
+13:51 INFO    :   chirp_mass = 28.0
+13:51 INFO    :   mass_ratio = 0.85
+13:51 INFO    :   a_1 = 0.6
+13:51 INFO    :   a_2 = 0.6
+13:51 INFO    :   tilt_1 = 0.0
+13:51 INFO    :   tilt_2 = 0.0
+13:51 INFO    :   phi_12 = 0.0
+13:51 INFO    :   phi_jl = 0.0
+13:51 INFO    :   luminosity_distance = 1000.0
+13:51 INFO    :   dec = 0.1
+13:51 INFO    :   ra = 0.1
+13:51 INFO    :   theta_jn = 0.1
+13:51 INFO    :   psi = 0.1
+13:51 INFO    :   phase = 0.1
+13:51 INFO    :   geocent_time = 0.0
+13:51 INFO    : Injected signal in L1:
+13:51 INFO    :   optimal SNR = 41.83
+13:51 INFO    :   matched filter SNR = 41.46+0.64j
+13:51 INFO    :   chirp_mass = 28.0
+13:51 INFO    :   mass_ratio = 0.85
+13:51 INFO    :   a_1 = 0.6
+13:51 INFO    :   a_2 = 0.6
+13:51 INFO    :   tilt_1 = 0.0
+13:51 INFO    :   tilt_2 = 0.0
+13:51 INFO    :   phi_12 = 0.0
+13:51 INFO    :   phi_jl = 0.0
+13:51 INFO    :   luminosity_distance = 1000.0
+13:51 INFO    :   dec = 0.1
+13:51 INFO    :   ra = 0.1
+13:51 INFO    :   theta_jn = 0.1
+13:51 INFO    :   psi = 0.1
+13:51 INFO    :   phase = 0.1
+13:51 INFO    :   geocent_time = 0.0
+13:51 INFO    : Injected signal in V1:
+13:51 INFO    :   optimal SNR = 18.20
+13:51 INFO    :   matched filter SNR = 18.39-1.08j
+13:51 INFO    :   chirp_mass = 28.0
+13:51 INFO    :   mass_ratio = 0.85
+13:51 INFO    :   a_1 = 0.6
+13:51 INFO    :   a_2 = 0.6
+13:51 INFO    :   tilt_1 = 0.0
+13:51 INFO    :   tilt_2 = 0.0
+13:51 INFO    :   phi_12 = 0.0
+13:51 INFO    :   phi_jl = 0.0
+13:51 INFO    :   luminosity_distance = 1000.0
+13:51 INFO    :   dec = 0.1
+13:51 INFO    :   ra = 0.1
+13:51 INFO    :   theta_jn = 0.1
+13:51 INFO    :   psi = 0.1
+13:51 INFO    :   phase = 0.1
+13:51 INFO    :   geocent_time = 0.0
+13:51 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:51 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+13:51 INFO    : Setting up likelihood with marginalizations: distance=False, time=False, phase=False.
+13:51 INFO    : Setting sampling-seed=614111
+13:51 INFO    : prior-file save at outdir/data/test_prior.json
+13:51 INFO    : Initial meta_data ={
+  "command_line_args": "{'nlive': 1024, 'dlogz': 0.1, 'n_effective': inf, 'dynesty_sample': 'acceptance-walk', 'dynesty_bound': 'live', 'walks': 100, 'proposals': None, 'maxmcmc': 5000, 'nact': 2, 'naccept': 60, 'min_eff': 10, 'facc': 0.5, 'enlarge': 1.5, 'n_check_point': 1000, 'max_its': 10000000000, 'max_run_time': 10000000000.0, 'fast_mpi': False, 'mpi_timing': False, 'mpi_timing_interval': 0, 'nestcheck': False, 'rejection_sample_posterior': True, 'bilby_zero_likelihood_mode': False, 'sampling_seed': None, 'clean': False, 'no_plot': False, 'do_not_save_bounds_in_resume': True, 'check_point_deltaT': 3600, 'rotate_checkpoints': False, 'ini': 'config.ini', 'verbose': False, 'calibration_model': None, 'spline_calibration_envelope_dict': None, 'spline_calibration_nodes': 10, 'spline_calibration_amplitude_uncertainty_dict': None, 'spline_calibration_phase_uncertainty_dict': None, 'calibration_prior_boundary': 'reflective', 'ignore_gwpy_data_quality_check': True, 'gps_tuple': None, 'gps_file': None, 'timeslide_file': None, 'timeslide_dict': None, 'trigger_time': '0', 'n_simulation': 0, 'data_dict': None, 'data_format': None, 'allow_tape': True, 'channel_dict': None, 'frame_type_dict': None, 'data_find_url': 'https://datafind.ligo.org', 'data_find_urltype': 'osdf', 'gaussian_noise': True, 'zero_noise': False, 'coherence_test': False, 'detectors': ['H1', 'L1', 'V1'], 'duration': 4.0, 'generation_seed': None, 'psd_dict': None, 'psd_fractional_overlap': 0.5, 'post_trigger_duration': 2.0, 'sampling_frequency': 4096, 'psd_length': 32, 'psd_maximum_duration': 1024, 'psd_method': 'median', 'psd_start_time': None, 'maximum_frequency': None, 'minimum_frequency': '20', 'tukey_roll_off': 0.4, 'resampling_method': 'lal', 'injection': False, 'injection_dict': \"{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 1000, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}\", 'injection_file': None, 'injection_numbers': None, 'injection_waveform_approximant': None, 'injection_frequency_domain_source_model': None, 'injection_waveform_arguments': None, 'accounting_user': None, 'label': 'test', 'outdir': 'outdir', 'overwrite_outdir': False, 'periodic_restart_time': 28800, 'request_disk': 5, 'conda_env': None, 'scheduler_analysis_time': '7-00:00:00', 'submit': False, 'condor_job_priority': 0, 'additional_transfer_paths': None, 'environment_variables': None, 'getenv': None, 'disable_hdf5_locking': False, 'log_directory': None, 'desired_sites': None, 'analysis_executable': None, 'analysis_executable_parser': None, 'calibration_marginalization': False, 'distance_marginalization': False, 'distance_marginalization_lookup_table': None, 'phase_marginalization': False, 'time_marginalization': False, 'jitter_time': True, 'reference_frame': 'sky', 'time_reference': 'geocent', 'likelihood_type': 'bilby.gw.likelihood.GravitationalWaveTransient', 'calibration_lookup_table': None, 'number_of_response_curves': 1000, 'roq_folder': None, 'roq_linear_matrix': None, 'roq_quadratic_matrix': None, 'roq_weights': None, 'roq_weight_format': 'hdf5', 'roq_scale_factor': 1, 'fiducial_parameters': None, 'update_fiducial_parameters': False, 'epsilon': 0.025, 'extra_likelihood_kwargs': '{}', 'plot_trace': False, 'plot_data': False, 'plot_injection': False, 'plot_spectrogram': False, 'create_summary': False, 'notification': 'Never', 'queue': None, 'existing_dir': None, 'webdir': None, 'summarypages_arguments': None, 'result_format': 'hdf5', 'final_result': True, 'final_result_nsamples': 20000, 'default_prior': 'BBHPriorDict', 'deltaT': 0.2, 'prior_file': None, 'prior_dict': \"{chirp-mass: Uniform(name='chirp_mass', minimum=25, maximum=35), mass_ratio = Uniform(name='mass_ratio', minimum=0.125, maximum=1), a_1 = 0.6, a_2 = 0.6, tilt_1 = 0.0, tilt_2 = 0.0, phi_12 = 0.0, phi_jl = 0.0, luminosity_distance = 1000, dec =  0.1, ra =  0.1, theta_jn =  0.1, psi =  0.1, phase =  0.1}\", 'enforce_signal_duration': True, 'single_postprocessing_executable': None, 'single_postprocessing_arguments': None, 'n_parallel': 1, 'reweighting_configuration': None, 'reweight_nested_samples': True, 'waveform_generator': 'bilby.gw.waveform_generator.LALCBCWaveformGenerator', 'reference_frequency': 20, 'waveform_approximant': 'TaylorF2', 'catch_waveform_errors': True, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'numerical_relativity_file': None, 'waveform_arguments_dict': None, 'mode_array': None, 'frequency_domain_source_model': 'lal_binary_black_hole', 'conversion_function': 'convert_to_lal_binary_black_hole_parameters', 'generation_function': None, 'sampler': 'dynesty', 'nodes': 1, 'ntasks_per_node': 2, 'time': '24:00:00', 'mem_per_cpu': '2G', 'extra_lines': None, 'slurm_extra_lines': None, 'idx': 0, 'data_dump_file': None, 'accounting': None, 'local': False, 'local_generation': False, 'local_plot': False, 'request_memory': 8.0, 'request_memory_generation': None, 'request_cpus': 1, 'scheduler': 'condor', 'scheduler_args': None, 'scheduler_module': None, 'scheduler_env': None, 'transfer_files': True, 'osg': False, 'plot_calibration': False, 'plot_corner': False, 'plot_marginal': False, 'plot_skymap': False, 'plot_waveform': False, 'plot_format': 'png', 'email': None, 'postprocessing_executable': None, 'postprocessing_arguments': None, 'sampler_kwargs': 'DynestyDefault'}",
+  "unknown_command_line_args": "[]",
+  "injection_parameters": "{'chirp_mass': 28.0, 'mass_ratio': 0.85, 'a_1': 0.6, 'a_2': 0.6, 'tilt_1': 0.0, 'tilt_2': 0.0, 'phi_12': 0.0, 'phi_jl': 0.0, 'luminosity_distance': 1000.0, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0}",
+  "bilby_version": "2.2.2",
+  "bilby_pipe_version": "1.3.0",
+  "config_file": "config.ini",
+  "data_dump_file": "outdir/data/test_data_dump.pickle",
+  "parallel_bilby_version": "2.0.2: (('CLEAN',)) b56d25b 2023-05-08 13:46:26 +1200",
+  "dynesty_version": "2.1.3",
+  "lalsimulation_version": "5.3.1"
+}
+13:51 INFO    : Complete ini written: outdir/test_config_complete.ini
+13:51 INFO    : Setup complete, now run:
+ $ bash outdir/submit/bash_test.sh
