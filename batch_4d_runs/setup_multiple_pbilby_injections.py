@@ -2,6 +2,7 @@
 Module to create an injection file + pbilby inis for the injections.
 """
 import logging
+import json
 import os
 # import shutil
 
@@ -9,24 +10,44 @@ from bilby_pipe.create_injections import create_injection_file
 
 logging.getLogger().setLevel(logging.INFO)
 
-
 N_INJECTION = 5
 LABEL = "bbh"  # the main name of the injections
 INJECTION_FILE = f"./datafiles/{LABEL}_injections.json"
 PRIOR_FILE = "./datafiles/bbh.prior"
 
-
-def create_ini(injection_idx: int):
+def create_ini(injection_idx: int,
+               load_fiducial_params: bool = True):
     unique_label = f"{LABEL}_{injection_idx}"
     outdir = f"out_{unique_label}"
     ini = f"{unique_label}.ini"
+    
+    # Read the ini template
     with open("config.ini", "r") as f:
         txt = f.read()
-        txt = txt.replace("{{{IDX}}}", str(injection_idx))
-        txt = txt.replace("{{{LABEL}}}", unique_label)
-        txt = txt.replace("{{{OUTDIR}}}", outdir)
-        txt = txt.replace("{{{PRIOR_FILE}}}", PRIOR_FILE)
-        txt = txt.replace("{{{INJECTION_FILE}}}", INJECTION_FILE)
+        
+    # Replace the placeholders with the actual values
+    txt = txt.replace("{{{IDX}}}", str(injection_idx))
+    txt = txt.replace("{{{LABEL}}}", unique_label)
+    txt = txt.replace("{{{OUTDIR}}}", outdir)
+    txt = txt.replace("{{{PRIOR_FILE}}}", PRIOR_FILE)
+    txt = txt.replace("{{{INJECTION_FILE}}}", INJECTION_FILE)
+        
+    # Load the fiducial parameters from the JSON file
+    if load_fiducial_params:
+        with open(INJECTION_FILE, "r") as f:
+            injections = json.load(f)
+            injections = injections["injections"]["content"]
+            
+            chirp_mass = injections["chirp_mass"][injection_idx]
+            mass_ratio = injections["mass_ratio"][injection_idx]
+            a_1 = injections["a_1"][injection_idx]
+            a_2 = injections["a_2"][injection_idx]
+            
+        txt = txt.replace("{{{CHIRP_MASS}}}", str(chirp_mass))
+        txt = txt.replace("{{{MASS_RATIO}}}", str(mass_ratio))
+        txt = txt.replace("{{{A_1}}}", str(a_1))
+        txt = txt.replace("{{{A_2}}}", str(a_2))
+        
     with open(ini, "w") as f:
         f.write(txt)
 
@@ -72,11 +93,11 @@ def main():
         create_ini(injection_idx=i)
 
     create_data_generation_slurm_submission_file()
-    logging.info("")
+    logging.info("Now run bash my_batch_generation.sh")
 
     create_analysis_bash_runner()
     logging.info(
-        ""
+        "Now run bash my_batch_run.sh to run the analysis on the generated data"
     )
 
 
