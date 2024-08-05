@@ -4,8 +4,8 @@
     "__module__": "bilby.core.prior.analytical",
     "__name__": "Uniform",
     "kwargs": {
-      "minimum": 25,
-      "maximum": 35,
+      "minimum": 15,
+      "maximum": 50,
       "name": "chirp_mass",
       "latex_label": "$\\mathcal{M}$",
       "unit": null,
@@ -17,7 +17,7 @@
     "__module__": "bilby.core.prior.analytical",
     "__name__": "Uniform",
     "kwargs": {
-      "minimum": 0.125,
+      "minimum": 0.5,
       "maximum": 1,
       "name": "mass_ratio",
       "latex_label": "$q$",
@@ -25,74 +25,30 @@
       "boundary": null
     }
   },
-  "a_1": {
+  "chi_1": {
     "__prior__": true,
     "__module__": "bilby.core.prior.analytical",
     "__name__": "Uniform",
     "kwargs": {
-      "minimum": 0,
+      "minimum": -0.88,
       "maximum": 0.88,
-      "name": "a_1",
-      "latex_label": "$a_1$",
+      "name": "chi_1",
+      "latex_label": "$\\chi_1$",
       "unit": null,
       "boundary": null
     }
   },
-  "a_2": {
+  "chi_2": {
     "__prior__": true,
     "__module__": "bilby.core.prior.analytical",
     "__name__": "Uniform",
     "kwargs": {
-      "minimum": 0,
+      "minimum": -0.88,
       "maximum": 0.88,
-      "name": "a_2",
-      "latex_label": "$a_2$",
+      "name": "chi_2",
+      "latex_label": "$\\chi_2$",
       "unit": null,
       "boundary": null
-    }
-  },
-  "tilt_1": {
-    "__prior__": true,
-    "__module__": "bilby.core.prior.analytical",
-    "__name__": "DeltaFunction",
-    "kwargs": {
-      "peak": 0.0,
-      "name": null,
-      "latex_label": null,
-      "unit": null
-    }
-  },
-  "tilt_2": {
-    "__prior__": true,
-    "__module__": "bilby.core.prior.analytical",
-    "__name__": "DeltaFunction",
-    "kwargs": {
-      "peak": 0.0,
-      "name": null,
-      "latex_label": null,
-      "unit": null
-    }
-  },
-  "phi_12": {
-    "__prior__": true,
-    "__module__": "bilby.core.prior.analytical",
-    "__name__": "DeltaFunction",
-    "kwargs": {
-      "peak": 0.0,
-      "name": null,
-      "latex_label": null,
-      "unit": null
-    }
-  },
-  "phi_jl": {
-    "__prior__": true,
-    "__module__": "bilby.core.prior.analytical",
-    "__name__": "DeltaFunction",
-    "kwargs": {
-      "peak": 0.0,
-      "name": null,
-      "latex_label": null,
-      "unit": null
     }
   },
   "luminosity_distance": {

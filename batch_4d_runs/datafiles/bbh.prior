@@ -1,12 +1,7 @@
-chirp_mass = Uniform(name='chirp_mass', minimum=25, maximum=35)
-mass_ratio = Uniform(name='mass_ratio', minimum=0.125, maximum=1)
-a_1 = Uniform(name='a_1', minimum=0, maximum=0.88)
-a_2 = Uniform(name='a_2', minimum=0, maximum=0.88)
-
-tilt_1 = 0.0
-tilt_2 = 0.0
-phi_12 = 0.0
-phi_jl = 0.0
+chirp_mass = Uniform(name='chirp_mass', minimum=15, maximum=50)
+mass_ratio = Uniform(name='mass_ratio', minimum=0.5, maximum=1)
+chi_1 = Uniform(name='chi_1', minimum=-0.88, maximum=0.88)
+chi_2 = Uniform(name='chi_2', minimum=-0.88, maximum=0.88)
 
 luminosity_distance = 2000.0
 dec = 0.0

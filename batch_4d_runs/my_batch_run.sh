@@ -4,7 +4,7 @@ export OMP_NUM_THREADS=1
 
 OUTDIR=/home/urash/twouters/projects/jim_meets_harmonic/batch_4d_runs/outdir
 
-N=5
+N=1
 for i in $(seq 0 $((N-1)))
 do
     FULL_LABEL=bbh_$i

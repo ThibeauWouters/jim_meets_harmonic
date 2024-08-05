@@ -10,7 +10,7 @@ from bilby_pipe.create_injections import create_injection_file
 
 logging.getLogger().setLevel(logging.INFO)
 
-N_INJECTION = 5
+N_INJECTION = 1
 LABEL = "bbh"  # the main name of the injections
 INJECTION_FILE = f"./datafiles/{LABEL}_injections.json"
 PRIOR_FILE = "./datafiles/bbh.prior"
@@ -40,13 +40,13 @@ def create_ini(injection_idx: int,
             
             chirp_mass = injections["chirp_mass"][injection_idx]
             mass_ratio = injections["mass_ratio"][injection_idx]
-            a_1 = injections["a_1"][injection_idx]
-            a_2 = injections["a_2"][injection_idx]
+            chi_1 = injections["chi_1"][injection_idx]
+            chi_2 = injections["chi_2"][injection_idx]
             
         txt = txt.replace("{{{CHIRP_MASS}}}", str(chirp_mass))
         txt = txt.replace("{{{MASS_RATIO}}}", str(mass_ratio))
-        txt = txt.replace("{{{A_1}}}", str(a_1))
-        txt = txt.replace("{{{A_2}}}", str(a_2))
+        txt = txt.replace("{{{A_1}}}", str(chi_1))
+        txt = txt.replace("{{{A_2}}}", str(chi_2))
         
     with open(ini, "w") as f:
         f.write(txt)
@@ -85,12 +85,12 @@ def main():
         filename=INJECTION_FILE,
         prior_file=PRIOR_FILE,
         n_injection=N_INJECTION,
-        generation_seed=0,
+        generation_seed=0
     )
 
     logging.info("Generating parallel bilby ini files + submission scripts")
     for i in range(N_INJECTION):
-        create_ini(injection_idx=i)
+        create_ini(injection_idx=i, load_fiducial_params=False)
 
     create_data_generation_slurm_submission_file()
     logging.info("Now run bash my_batch_generation.sh")
