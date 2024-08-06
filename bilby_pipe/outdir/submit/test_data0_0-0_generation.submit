@@ -1,6 +1,6 @@
 universe = vanilla
 executable = /home/thibeau.wouters/miniconda3/envs/igwn-py310/bin/bilby_pipe_generation
-request_memory = 8.0GB
+request_memory = 8GB
 request_disk = 5GB
 request_cpus = 1
 getenv = True

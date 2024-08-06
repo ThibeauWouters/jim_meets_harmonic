@@ -1,8 +1,8 @@
 universe = vanilla
 executable = /home/thibeau.wouters/miniconda3/envs/igwn-py310/bin/bilby_pipe_analysis
-request_memory = 256.0GB
+request_memory = 8.0GB
 request_disk = 5GB
-request_cpus = 128
+request_cpus = 16
 getenv = True
 initialdir = /home/thibeau.wouters/projects/jim_meets_harmonic/bilby_pipe
 notification = Never
