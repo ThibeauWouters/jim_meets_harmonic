@@ -1,0 +1,11 @@
+JOB test_data0_0-0_generation_arg_0 outdir/submit/test_data0_0-0_generation.submit
+VARS test_data0_0-0_generation_arg_0 ARGS="outdir/test_config_complete.ini --label test_data0_0-0_generation --idx 0 --trigger-time 0.0"
+JOB test_data0_0-0_analysis_H1L1V1_arg_0 outdir/submit/test_data0_0-0_analysis_H1L1V1.submit
+VARS test_data0_0-0_analysis_H1L1V1_arg_0 ARGS="outdir/test_config_complete.ini --detectors H1 --detectors L1 --detectors V1 --label test_data0_0-0_analysis_H1L1V1 --data-dump-file outdir/data/test_data0_0-0_generation_data_dump.pickle --sampler dynesty"
+Retry test_data0_0-0_analysis_H1L1V1_arg_0 3
+JOB test_data0_0-0_analysis_H1L1V1_final_result_arg_0 outdir/submit/test_data0_0-0_analysis_H1L1V1_final_result.submit
+VARS test_data0_0-0_analysis_H1L1V1_final_result_arg_0 ARGS="--result outdir/result/test_data0_0-0_analysis_H1L1V1_result.hdf5 --outdir outdir/final_result --extension hdf5 --max-samples 20000 --lightweight --save"
+
+#Inter-job dependencies
+Parent test_data0_0-0_generation_arg_0 Child test_data0_0-0_analysis_H1L1V1_arg_0
+Parent test_data0_0-0_analysis_H1L1V1_arg_0 Child test_data0_0-0_analysis_H1L1V1_final_result_arg_0

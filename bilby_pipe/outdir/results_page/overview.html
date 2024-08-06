@@ -1,0 +1,964 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+
+body {
+    padding-bottom: 50px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 2px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 8px;
+    background-color: white;
+    display: none;
+}
+
+.alignleft {
+        float: left;
+}
+.alignright {
+        float: right;
+}
+</style>
+
+<div class="container">
+<h1> Overview page for label: test </h1>
+</div>
+
+<div class="container">
+<h2> Setup </h2>
+
+<button class="accordion"> <b>Configuration file:</b> /home/thibeau.wouters/projects/jim_meets_harmonic/bilby_pipe/config.ini </button>
+<div class="panel">
+<table style="width:100%">
+
+<tr>
+    <th scope="row"> ini </th>
+   <td> /home/thibeau.wouters/projects/jim_meets_harmonic/bilby_pipe/config.ini </td>
+</tr>
+
+<tr>
+    <th scope="row"> verbose </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> calibration_model </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> spline_calibration_envelope_dict </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> spline_calibration_nodes </th>
+   <td> 10 </td>
+</tr>
+
+<tr>
+    <th scope="row"> spline_calibration_amplitude_uncertainty_dict </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> spline_calibration_phase_uncertainty_dict </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> calibration_prior_boundary </th>
+   <td> reflective </td>
+</tr>
+
+<tr>
+    <th scope="row"> ignore_gwpy_data_quality_check </th>
+   <td> True </td>
+</tr>
+
+<tr>
+    <th scope="row"> gps_tuple </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> gps_file </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> timeslide_file </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> timeslide_dict </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> trigger_time </th>
+   <td> 0 </td>
+</tr>
+
+<tr>
+    <th scope="row"> n_simulation </th>
+   <td> 1 </td>
+</tr>
+
+<tr>
+    <th scope="row"> data_dict </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> data_format </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> allow_tape </th>
+   <td> True </td>
+</tr>
+
+<tr>
+    <th scope="row"> channel_dict </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> gaussian_noise </th>
+   <td> True </td>
+</tr>
+
+<tr>
+    <th scope="row"> zero_noise </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> coherence_test </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> detectors </th>
+   <td> [H1, L1, V1] </td>
+</tr>
+
+<tr>
+    <th scope="row"> duration </th>
+   <td> 4.0 </td>
+</tr>
+
+<tr>
+    <th scope="row"> generation_seed </th>
+   <td> 342931 </td>
+</tr>
+
+<tr>
+    <th scope="row"> psd_dict </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> psd_fractional_overlap </th>
+   <td> 0.5 </td>
+</tr>
+
+<tr>
+    <th scope="row"> post_trigger_duration </th>
+   <td> 2.0 </td>
+</tr>
+
+<tr>
+    <th scope="row"> sampling_frequency </th>
+   <td> 4096 </td>
+</tr>
+
+<tr>
+    <th scope="row"> psd_length </th>
+   <td> 32 </td>
+</tr>
+
+<tr>
+    <th scope="row"> psd_maximum_duration </th>
+   <td> 1024 </td>
+</tr>
+
+<tr>
+    <th scope="row"> psd_method </th>
+   <td> median </td>
+</tr>
+
+<tr>
+    <th scope="row"> psd_start_time </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> maximum_frequency </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> minimum_frequency </th>
+   <td> 20 </td>
+</tr>
+
+<tr>
+    <th scope="row"> tukey_roll_off </th>
+   <td> 0.4 </td>
+</tr>
+
+<tr>
+    <th scope="row"> resampling_method </th>
+   <td> lal </td>
+</tr>
+
+<tr>
+    <th scope="row"> injection </th>
+   <td> True </td>
+</tr>
+
+<tr>
+    <th scope="row"> injection_dict </th>
+   <td> {'chirp_mass': 30.0, 'mass_ratio': 1.0, 'chi_1': 0.0, 'chi_2': 0.0, 'luminosity_distance': 2000, 'dec': 0.1, 'ra': 0.1, 'theta_jn': 0.1, 'psi': 0.1, 'phase': 0.1, 'geocent_time': 0.0} </td>
+</tr>
+
+<tr>
+    <th scope="row"> injection_file </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> injection_numbers </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> injection_waveform_approximant </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> injection_waveform_arguments </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> accounting </th>
+   <td> ligo.dev.o4.cbc.explore.test </td>
+</tr>
+
+<tr>
+    <th scope="row"> accounting_user </th>
+   <td> thibeau.wouters </td>
+</tr>
+
+<tr>
+    <th scope="row"> label </th>
+   <td> test </td>
+</tr>
+
+<tr>
+    <th scope="row"> local </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> local_generation </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> local_plot </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> outdir </th>
+   <td> /home/thibeau.wouters/projects/jim_meets_harmonic/bilby_pipe/outdir </td>
+</tr>
+
+<tr>
+    <th scope="row"> overwrite_outdir </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> periodic_restart_time </th>
+   <td> 28800 </td>
+</tr>
+
+<tr>
+    <th scope="row"> request_disk </th>
+   <td> 5 </td>
+</tr>
+
+<tr>
+    <th scope="row"> request_memory </th>
+   <td> 256.0 </td>
+</tr>
+
+<tr>
+    <th scope="row"> request_memory_generation </th>
+   <td> 8.0 </td>
+</tr>
+
+<tr>
+    <th scope="row"> request_cpus </th>
+   <td> 128 </td>
+</tr>
+
+<tr>
+    <th scope="row"> conda_env </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> scheduler </th>
+   <td> condor </td>
+</tr>
+
+<tr>
+    <th scope="row"> scheduler_args </th>
+   <td> partition=astro3_short </td>
+</tr>
+
+<tr>
+    <th scope="row"> scheduler_module </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> scheduler_env </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> scheduler_analysis_time </th>
+   <td> 2:00:00 </td>
+</tr>
+
+<tr>
+    <th scope="row"> submit </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> condor_job_priority </th>
+   <td> 0 </td>
+</tr>
+
+<tr>
+    <th scope="row"> transfer_files </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> additional_transfer_paths </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> log_directory </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> osg </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> desired_sites </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> analysis_executable </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> analysis_executable_parser </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> calibration_marginalization </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> distance_marginalization </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> distance_marginalization_lookup_table </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> phase_marginalization </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> time_marginalization </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> jitter_time </th>
+   <td> True </td>
+</tr>
+
+<tr>
+    <th scope="row"> reference_frame </th>
+   <td> sky </td>
+</tr>
+
+<tr>
+    <th scope="row"> time_reference </th>
+   <td> geocent </td>
+</tr>
+
+<tr>
+    <th scope="row"> likelihood_type </th>
+   <td> GravitationalWaveTransient </td>
+</tr>
+
+<tr>
+    <th scope="row"> calibration_lookup_table </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> roq_folder </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> roq_linear_matrix </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> roq_quadratic_matrix </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> roq_weights </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> roq_weight_format </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> roq_scale_factor </th>
+   <td> 1 </td>
+</tr>
+
+<tr>
+    <th scope="row"> fiducial_parameters </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> update_fiducial_parameters </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> epsilon </th>
+   <td> 0.025 </td>
+</tr>
+
+<tr>
+    <th scope="row"> extra_likelihood_kwargs </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> plot_trace </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> plot_data </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> plot_injection </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> plot_spectrogram </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> plot_calibration </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> plot_corner </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> plot_marginal </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> plot_skymap </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> plot_waveform </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> plot_format </th>
+   <td> png </td>
+</tr>
+
+<tr>
+    <th scope="row"> create_summary </th>
+   <td> False </td>
+</tr>
+
+<tr>
+    <th scope="row"> email </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> notification </th>
+   <td> Never </td>
+</tr>
+
+<tr>
+    <th scope="row"> queue </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> existing_dir </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> webdir </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> summarypages_arguments </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> result_format </th>
+   <td> hdf5 </td>
+</tr>
+
+<tr>
+    <th scope="row"> final_result </th>
+   <td> True </td>
+</tr>
+
+<tr>
+    <th scope="row"> final_result_nsamples </th>
+   <td> 20000 </td>
+</tr>
+
+<tr>
+    <th scope="row"> default_prior </th>
+   <td> BBHPriorDict </td>
+</tr>
+
+<tr>
+    <th scope="row"> deltaT </th>
+   <td> 0.2 </td>
+</tr>
+
+<tr>
+    <th scope="row"> prior_file </th>
+   <td> /home/thibeau.wouters/projects/jim_meets_harmonic/bilby_pipe/injection.prior </td>
+</tr>
+
+<tr>
+    <th scope="row"> prior_dict </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> enforce_signal_duration </th>
+   <td> True </td>
+</tr>
+
+<tr>
+    <th scope="row"> postprocessing_executable </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> postprocessing_arguments </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> single_postprocessing_executable </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> single_postprocessing_arguments </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> sampler </th>
+   <td> dynesty </td>
+</tr>
+
+<tr>
+    <th scope="row"> sampling_seed </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> n_parallel </th>
+   <td> 1 </td>
+</tr>
+
+<tr>
+    <th scope="row"> sampler_kwargs </th>
+   <td> {'nlive': 1000, 'naccept': 60, 'check_point_plot': True, 'check_point_delta_t': 1800, 'print_method': 'interval-60', 'sample': 'acceptance-walk', 'npool': 128} </td>
+</tr>
+
+<tr>
+    <th scope="row"> reweighting_configuration </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> reweight_nested_samples </th>
+   <td> True </td>
+</tr>
+
+<tr>
+    <th scope="row"> waveform_generator </th>
+   <td> bilby.gw.waveform_generator.LALCBCWaveformGenerator </td>
+</tr>
+
+<tr>
+    <th scope="row"> reference_frequency </th>
+   <td> 20 </td>
+</tr>
+
+<tr>
+    <th scope="row"> waveform_approximant </th>
+   <td> IMRPhenomD </td>
+</tr>
+
+<tr>
+    <th scope="row"> catch_waveform_errors </th>
+   <td> True </td>
+</tr>
+
+<tr>
+    <th scope="row"> pn_spin_order </th>
+   <td> -1 </td>
+</tr>
+
+<tr>
+    <th scope="row"> pn_tidal_order </th>
+   <td> -1 </td>
+</tr>
+
+<tr>
+    <th scope="row"> pn_phase_order </th>
+   <td> -1 </td>
+</tr>
+
+<tr>
+    <th scope="row"> pn_amplitude_order </th>
+   <td> 0 </td>
+</tr>
+
+<tr>
+    <th scope="row"> numerical_relativity_file </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> waveform_arguments_dict </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> mode_array </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> frequency_domain_source_model </th>
+   <td> lal_binary_black_hole </td>
+</tr>
+
+<tr>
+    <th scope="row"> conversion_function </th>
+   <td> None </td>
+</tr>
+
+<tr>
+    <th scope="row"> generation_function </th>
+   <td> None </td>
+</tr>
+
+</table>
+</div>
+
+<button class="accordion"> <b>Prior file:</b> ('/home/thibeau.wouters/projects/jim_meets_harmonic/bilby_pipe/injection.prior',) </button>
+<div class="panel">
+<table style="width:100%">
+
+<tr>
+    <th scope="row"> chirp_mass </th>
+   <td> Uniform(minimum=15, maximum=50, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None) </td>
+</tr>
+
+<tr>
+    <th scope="row"> mass_ratio </th>
+   <td> Uniform(minimum=0.5, maximum=1, name='mass_ratio', latex_label='$q$', unit=None, boundary=None) </td>
+</tr>
+
+<tr>
+    <th scope="row"> chi_1 </th>
+   <td> Uniform(minimum=-0.88, maximum=0.88, name='chi_1', latex_label='$\\chi_1$', unit=None, boundary=None) </td>
+</tr>
+
+<tr>
+    <th scope="row"> chi_2 </th>
+   <td> Uniform(minimum=-0.88, maximum=0.88, name='chi_2', latex_label='$\\chi_2$', unit=None, boundary=None) </td>
+</tr>
+
+<tr>
+    <th scope="row"> luminosity_distance </th>
+   <td> DeltaFunction(peak=2000.0, name=None, latex_label=None, unit=None) </td>
+</tr>
+
+<tr>
+    <th scope="row"> dec </th>
+   <td> DeltaFunction(peak=0.0, name=None, latex_label=None, unit=None) </td>
+</tr>
+
+<tr>
+    <th scope="row"> ra </th>
+   <td> DeltaFunction(peak=0.0, name=None, latex_label=None, unit=None) </td>
+</tr>
+
+<tr>
+    <th scope="row"> theta_jn </th>
+   <td> DeltaFunction(peak=0.0, name=None, latex_label=None, unit=None) </td>
+</tr>
+
+<tr>
+    <th scope="row"> psi </th>
+   <td> DeltaFunction(peak=0.0, name=None, latex_label=None, unit=None) </td>
+</tr>
+
+<tr>
+    <th scope="row"> phase </th>
+   <td> DeltaFunction(peak=0.0, name=None, latex_label=None, unit=None) </td>
+</tr>
+
+<tr>
+    <th scope="row"> geocent_time </th>
+   <td> DeltaFunction(peak=0.0, name=None, latex_label=None, unit=None) </td>
+</tr>
+
+</table>
+</div>
+
+
+<button class="accordion"> <b>Injection-waveform:</b> IMRPhenomD,
+<b>File:</b> None </button>
+<div class="panel">
+<table style="width:100%">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>chirp_mass</th>
+      <th>mass_ratio</th>
+      <th>chi_1</th>
+      <th>chi_2</th>
+      <th>luminosity_distance</th>
+      <th>dec</th>
+      <th>ra</th>
+      <th>theta_jn</th>
+      <th>psi</th>
+      <th>phase</th>
+      <th>geocent_time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>30.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2000</td>
+      <td>0.1</td>
+      <td>0.1</td>
+      <td>0.1</td>
+      <td>0.1</td>
+      <td>0.1</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</table>
+
+
+</div>
+</div>
+
+
+<div class="container">
+<h2> Data: test_data0_0-0_generation </h2>
+
+<button class="accordion"> <b>Log file</b>:
+../log_data_generation/test_data0_0-0_generation.err </button>
+<div class="panel">
+<object data="../log_data_generation/test_data0_0-0_generation.err" width=100% height="200">
+N/A
+</object>
+</div>
+
+
+</div>
+
+
+
+<div class="container">
+<h2> Parallel Analysis: test_data0_0-0_analysis_H1L1V1 </h2>
+
+
+
+<button class="accordion"> <b>Log file</b>:
+../log_data_analysis/test_data0_0-0_analysis_H1L1V1.err </button>
+<div class="panel">
+<object data="../log_data_analysis/test_data0_0-0_analysis_H1L1V1.err" width=100% height="200">
+N/A
+</object>
+</div>
+
+<button class="accordion"> <b>Output file</b>:
+../log_data_analysis/test_data0_0-0_analysis_H1L1V1.out </button>
+<div class="panel">
+<object data="../log_data_analysis/test_data0_0-0_analysis_H1L1V1.out" width=100% height="200">
+N/A
+</object>
+</div>
+
+</div>
+
+
+<div class="container">
+<h2> Other log files: </h2>
+
+
+<button class="accordion"> <b>Log file</b>:
+../log_data_analysis/test_data0_0-0_analysis_H1L1V1.err </button>
+<div class="panel">
+<object data="../log_data_analysis/test_data0_0-0_analysis_H1L1V1.err" width=100% height="200">
+N/A
+</object>
+</div>
+
+
+
+
+</div>
+
+<div class="container">
+<h2> Bilby results:
+<a href="../result"> /home/thibeau.wouters/projects/jim_meets_harmonic/bilby_pipe/outdir/result </a>
+ </h2>
+ </div>
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>

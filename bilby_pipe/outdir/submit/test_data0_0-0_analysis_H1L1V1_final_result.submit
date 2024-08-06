@@ -1,0 +1,17 @@
+universe = vanilla
+executable = /home/thibeau.wouters/miniconda3/envs/igwn-py310/bin/bilby_result
+request_memory = 4 GB
+request_disk = 5GB
+request_cpus = 1
+getenv = True
+initialdir = /home/thibeau.wouters/projects/jim_meets_harmonic/bilby_pipe
+notification = Never
+requirements = 
+log = outdir/log_data_analysis/test_data0_0-0_analysis_H1L1V1_final_result.log
+output = outdir/log_data_analysis/test_data0_0-0_analysis_H1L1V1_final_result.out
+error = outdir/log_data_analysis/test_data0_0-0_analysis_H1L1V1_final_result.err
+accounting_group = ligo.dev.o4.cbc.explore.test
+accounting_group_user = thibeau.wouters
+priority = 0
+arguments = $(ARGS)
+queue
