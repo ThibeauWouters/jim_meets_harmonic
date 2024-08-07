@@ -1,4 +1,4 @@
-chirp_mass = Uniform(name='chirp_mass', minimum=15, maximum=50)
+chirp_mass = Uniform(name='chirp_mass', minimum=50, maximum=80)
 mass_ratio = Uniform(name='mass_ratio', minimum=0.5, maximum=1)
 chi_1 = Uniform(name='chi_1', minimum=-0.88, maximum=0.88)
 chi_2 = Uniform(name='chi_2', minimum=-0.88, maximum=0.88)
