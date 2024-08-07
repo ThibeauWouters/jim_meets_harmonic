@@ -1,0 +1,93 @@
+000 (55071201.000.000) 2024-08-06 02:31:45 Job submitted from host: <10.14.0.71:9618?addrs=10.14.0.71-9618&alias=ldas-pcdev11.ligo.caltech.edu&noUDP&sock=schedd_3868_b46a>
+    DAG Node: test_data0_0-0_generation_arg_0
+...
+001 (55071201.000.000) 2024-08-06 02:32:06 Job executing on host: <10.14.10.123:9618?addrs=10.14.10.123-9618&alias=node2373.cluster.ldas.cit&noUDP&sock=startd_3097_dce5>
+	SlotName: slot1_12@node2373.cluster.ldas.cit
+	CondorScratchDir = "/local/condor/execute/dir_4132010"
+	Cpus = 1
+	Disk = 5243904
+	GPUs = 0
+	Memory = 8192
+...
+005 (55071201.000.000) 2024-08-06 02:32:23 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:05, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:05, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :        1  5242880   5243904 
+	   GPUs                 :                           0 
+	   Memory (MB)          :      250     8192      8192 
+	   TimeExecute (s)      :       17                    
+	   TimeSlotBusy (s)     :       18                    
+
+	Job terminated of its own accord at 2024-08-06T09:32:23Z with exit-code 0.
+...
+000 (55071202.000.000) 2024-08-06 02:32:30 Job submitted from host: <10.14.0.71:9618?addrs=10.14.0.71-9618&alias=ldas-pcdev11.ligo.caltech.edu&noUDP&sock=schedd_3868_b46a>
+    DAG Node: test_data0_0-0_analysis_H1L1V1_arg_0
+...
+001 (55071202.000.000) 2024-08-06 02:33:01 Job executing on host: <10.14.9.144:9618?addrs=10.14.9.144-9618&alias=node2144.cluster.ldas.cit&noUDP&sock=startd_9997_b05f>
+	SlotName: slot1_10@node2144.cluster.ldas.cit
+	CondorScratchDir = "/local/condor/execute/dir_3129465"
+	Cpus = 16
+	Disk = 5243904
+	GPUs = 0
+	Memory = 8192
+...
+005 (55071202.000.000) 2024-08-06 07:20:18 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 09:26:02, Sys 0 00:01:37  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 09:26:02, Sys 0 00:01:37  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.98       16        16 
+	   Disk (KB)            :     1     5242880   5243904 
+	   GPUs                 :                           0 
+	   Memory (MB)          :  1245        8192      8192 
+	   TimeExecute (s)      : 17237                       
+	   TimeSlotBusy (s)     : 17237                       
+
+	Job terminated of its own accord at 2024-08-06T14:20:18Z with exit-code 0.
+...
+000 (55071203.000.000) 2024-08-06 07:20:28 Job submitted from host: <10.14.0.71:9618?addrs=10.14.0.71-9618&alias=ldas-pcdev11.ligo.caltech.edu&noUDP&sock=schedd_3868_b46a>
+    DAG Node: test_data0_0-0_analysis_H1L1V1_final_result_arg_0
+...
+001 (55071203.000.000) 2024-08-06 07:20:41 Job executing on host: <10.14.4.40:9618?addrs=10.14.4.40-9618&alias=node790.cluster.ldas.cit&noUDP&sock=startd_2600_f653>
+	SlotName: slot1_13@node790.cluster.ldas.cit
+	CondorScratchDir = "/local/condor/execute/dir_3520877"
+	Cpus = 1
+	Disk = 5243904
+	GPUs = 0
+	Memory = 4096
+...
+005 (55071203.000.000) 2024-08-06 07:20:49 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:02, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:02, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :        1  5242880   5243904 
+	   GPUs                 :                           0 
+	   Memory (MB)          :      232     4096      4096 
+	   TimeExecute (s)      :        8                    
+	   TimeSlotBusy (s)     :        8                    
+
+	Job terminated of its own accord at 2024-08-06T14:20:49Z with exit-code 0.
+...

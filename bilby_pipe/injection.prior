@@ -1,0 +1,13 @@
+chirp_mass = Uniform(name='chirp_mass', minimum=15, maximum=50)
+mass_ratio = Uniform(name='mass_ratio', minimum=0.5, maximum=1)
+chi_1 = Uniform(name='chi_1', minimum=-0.88, maximum=0.88)
+chi_2 = Uniform(name='chi_2', minimum=-0.88, maximum=0.88)
+
+luminosity_distance = 2000.0
+dec = 0.0
+ra = 0.0
+theta_jn = 0.0
+psi = 0.0
+phase = 0.0
+
+geocent_time = 0.0
