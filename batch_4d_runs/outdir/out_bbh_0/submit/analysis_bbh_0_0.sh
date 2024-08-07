@@ -9,4 +9,4 @@
 
 
 
-mpirun parallel_bilby_analysis outdir/out_bbh_0/data/bbh_0_data_dump.pickle --label bbh_0_0 --sampling-seed 235425 --outdir /home/urash/twouters/projects/jim_meets_harmonic/batch_4d_runs/outdir/out_bbh_0/result
+mpirun parallel_bilby_analysis outdir/out_bbh_0/data/bbh_0_data_dump.pickle --label bbh_0_0 --sampling-seed 236768 --outdir /home/urash/twouters/projects/jim_meets_harmonic/batch_4d_runs/outdir/out_bbh_0/result
