@@ -1,0 +1,14 @@
+python injection_recovery.py \
+    --outdir ./outdir/ \
+    --load-existing-config True \
+    --id 1 \
+    --psd-file-H1 "../../psds/psd.txt" \
+    --psd-file-L1 "../../psds/psd.txt" \
+    --psd-file-V1 "../../psds/psd_virgo.txt" \
+    --use-relative-binning False \
+    --n-loop-training 10 \
+    --n-loop-production 5 \
+    --n-global-steps 1000 \
+    --n-local-steps 10 \
+    --eps-mass-matrix 0.001 \
+    --n-epochs 100
