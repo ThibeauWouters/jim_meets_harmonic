@@ -1,46 +1,8 @@
 {
-  "mass_1": {
-    "__prior__": true,
-    "__module__": "bilby.core.prior.base",
-    "__name__": "Constraint",
-    "kwargs": {
-      "minimum": 5,
-      "maximum": 100,
-      "name": "mass_1",
-      "latex_label": "$m_1$",
-      "unit": null
-    }
-  },
-  "mass_2": {
-    "__prior__": true,
-    "__module__": "bilby.core.prior.base",
-    "__name__": "Constraint",
-    "kwargs": {
-      "minimum": 5,
-      "maximum": 100,
-      "name": "mass_2",
-      "latex_label": "$m_2$",
-      "unit": null
-    }
-  },
-  "mass_ratio": {
-    "__prior__": true,
-    "__module__": "bilby.gw.prior",
-    "__name__": "UniformInComponentsMassRatio",
-    "kwargs": {
-      "minimum": 0.125,
-      "maximum": 1,
-      "name": "mass_ratio",
-      "latex_label": "$q$",
-      "unit": null,
-      "boundary": null,
-      "equal_mass": false
-    }
-  },
   "chirp_mass": {
     "__prior__": true,
-    "__module__": "bilby.gw.prior",
-    "__name__": "UniformInComponentsChirpMass",
+    "__module__": "bilby.core.prior.analytical",
+    "__name__": "Uniform",
     "kwargs": {
       "minimum": 25,
       "maximum": 100,
@@ -50,53 +12,91 @@
       "boundary": null
     }
   },
-  "luminosity_distance": {
-    "__prior__": true,
-    "__module__": "bilby.gw.prior",
-    "__name__": "UniformSourceFrame",
-    "kwargs": {
-      "minimum": 100.0,
-      "maximum": 5000.0,
-      "cosmology": "Planck15",
-      "name": "luminosity_distance",
-      "latex_label": "$d_L$",
-      "unit": "Mpc",
-      "boundary": null
-    }
-  },
-  "dec": {
+  "mass_ratio": {
     "__prior__": true,
     "__module__": "bilby.core.prior.analytical",
-    "__name__": "Cosine",
+    "__name__": "Uniform",
     "kwargs": {
-      "minimum": -1.5707963267948966,
-      "maximum": 1.5707963267948966,
-      "name": "dec",
-      "latex_label": "$\\mathrm{DEC}$",
+      "minimum": 0.125,
+      "maximum": 1,
+      "name": "mass_ratio",
+      "latex_label": "$q$",
       "unit": null,
       "boundary": null
     }
   },
-  "ra": {
+  "chi_1": {
+    "__prior__": true,
+    "__module__": "bilby.core.prior.analytical",
+    "__name__": "Uniform",
+    "kwargs": {
+      "minimum": 0,
+      "maximum": 0.99,
+      "name": "chi_1",
+      "latex_label": "$\\chi_1$",
+      "unit": null,
+      "boundary": null
+    }
+  },
+  "chi_2": {
+    "__prior__": true,
+    "__module__": "bilby.core.prior.analytical",
+    "__name__": "Uniform",
+    "kwargs": {
+      "minimum": 0,
+      "maximum": 0.99,
+      "name": "chi_2",
+      "latex_label": "$\\chi_2$",
+      "unit": null,
+      "boundary": null
+    }
+  },
+  "luminosity_distance": {
+    "__prior__": true,
+    "__module__": "bilby.core.prior.analytical",
+    "__name__": "Uniform",
+    "kwargs": {
+      "minimum": 500.0,
+      "maximum": 4000.0,
+      "name": "luminosity_distance",
+      "latex_label": "$d_L$",
+      "unit": null,
+      "boundary": null
+    }
+  },
+  "geocent_time": {
+    "__prior__": true,
+    "__module__": "bilby.core.prior.analytical",
+    "__name__": "Uniform",
+    "kwargs": {
+      "minimum": -0.01,
+      "maximum": 0.01,
+      "name": "geocent_time",
+      "latex_label": "$t_c$",
+      "unit": null,
+      "boundary": null
+    }
+  },
+  "phase": {
     "__prior__": true,
     "__module__": "bilby.core.prior.analytical",
     "__name__": "Uniform",
     "kwargs": {
       "minimum": 0,
       "maximum": 6.283185307179586,
-      "name": "ra",
-      "latex_label": "$\\mathrm{RA}$",
+      "name": "phase",
+      "latex_label": "$\\phi$",
       "unit": null,
-      "boundary": "periodic"
+      "boundary": null
     }
   },
   "theta_jn": {
     "__prior__": true,
     "__module__": "bilby.core.prior.analytical",
-    "__name__": "Sine",
+    "__name__": "Uniform",
     "kwargs": {
       "minimum": 0,
-      "maximum": 3.141592653589793,
+      "maximum": 6.283185307179586,
       "name": "theta_jn",
       "latex_label": "$\\theta_{JN}$",
       "unit": null,
@@ -113,109 +113,31 @@
       "name": "psi",
       "latex_label": "$\\psi$",
       "unit": null,
-      "boundary": "periodic"
+      "boundary": null
     }
   },
-  "phase": {
+  "dec": {
     "__prior__": true,
     "__module__": "bilby.core.prior.analytical",
     "__name__": "Uniform",
     "kwargs": {
       "minimum": 0,
       "maximum": 6.283185307179586,
-      "name": "phase",
-      "latex_label": "$\\phi$",
+      "name": "dec",
+      "latex_label": "$\\mathrm{DEC}$",
       "unit": null,
-      "boundary": "periodic"
+      "boundary": null
     }
   },
-  "chi_1": {
-    "__prior__": true,
-    "__module__": "bilby.gw.prior",
-    "__name__": "AlignedSpin",
-    "kwargs": {
-      "a_prior": {
-        "__prior__": true,
-        "__module__": "bilby.core.prior.analytical",
-        "__name__": "Uniform",
-        "kwargs": {
-          "minimum": 0,
-          "maximum": 0.99,
-          "name": null,
-          "latex_label": null,
-          "unit": null,
-          "boundary": null
-        }
-      },
-      "z_prior": {
-        "__prior__": true,
-        "__module__": "bilby.core.prior.analytical",
-        "__name__": "Uniform",
-        "kwargs": {
-          "minimum": -1,
-          "maximum": 1,
-          "name": null,
-          "latex_label": null,
-          "unit": null,
-          "boundary": null
-        }
-      },
-      "name": "chi_1",
-      "latex_label": "$\\chi_1$",
-      "unit": null,
-      "boundary": null,
-      "minimum": -0.99,
-      "maximum": 0.99
-    }
-  },
-  "chi_2": {
-    "__prior__": true,
-    "__module__": "bilby.gw.prior",
-    "__name__": "AlignedSpin",
-    "kwargs": {
-      "a_prior": {
-        "__prior__": true,
-        "__module__": "bilby.core.prior.analytical",
-        "__name__": "Uniform",
-        "kwargs": {
-          "minimum": 0,
-          "maximum": 0.99,
-          "name": null,
-          "latex_label": null,
-          "unit": null,
-          "boundary": null
-        }
-      },
-      "z_prior": {
-        "__prior__": true,
-        "__module__": "bilby.core.prior.analytical",
-        "__name__": "Uniform",
-        "kwargs": {
-          "minimum": -1,
-          "maximum": 1,
-          "name": null,
-          "latex_label": null,
-          "unit": null,
-          "boundary": null
-        }
-      },
-      "name": "chi_2",
-      "latex_label": "$\\chi_2$",
-      "unit": null,
-      "boundary": null,
-      "minimum": -0.99,
-      "maximum": 0.99
-    }
-  },
-  "geocent_time": {
+  "ra": {
     "__prior__": true,
     "__module__": "bilby.core.prior.analytical",
     "__name__": "Uniform",
     "kwargs": {
-      "minimum": -0.01,
-      "maximum": 0.01,
-      "name": "geocent_time",
-      "latex_label": "$t_c$",
+      "minimum": 0,
+      "maximum": 6.283185307179586,
+      "name": "ra",
+      "latex_label": "$\\mathrm{RA}$",
       "unit": null,
       "boundary": null
     }
