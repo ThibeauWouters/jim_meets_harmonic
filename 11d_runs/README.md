@@ -1,1 +1,2 @@
-- `working_1`: The first test run
+- `working_0`: The first test run
+- `working_1`: Similar test run, slightly changed injection and priors. Cross-checking with jim on this one.
