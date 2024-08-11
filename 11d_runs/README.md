@@ -1,2 +1,3 @@
 - `working_0`: The first test run
-- `working_1`: Similar test run, slightly changed injection and priors. Cross-checking with jim on this one.
+- `working_1`: Similar test run, slightly changed injection and priors. Cross-checking with jim on this one. However, the posteriors don't seem to agree -- perhaps this is because the priors between bilby and jim do not match completely. Will test that in the next batch of runs.
+- `working_2`: New set of runs. Now changed the priors on the angles to uniform ones, in order to make sure the bilby and jim runs agree. 
