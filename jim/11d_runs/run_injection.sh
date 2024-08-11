@@ -1,11 +1,11 @@
 python injection_recovery.py \
     --outdir ./outdir/ \
     --load-existing-config True \
-    --id "2_RB" \
+    --id "3" \
     --psd-file-H1 "../../psds/psd.txt" \
     --psd-file-L1 "../../psds/psd.txt" \
     --psd-file-V1 "../../psds/psd_virgo.txt" \
-    --use-relative-binning True \
+    --use-relative-binning False \
     --n-loop-training 10 \
     --n-loop-production 5 \
     --n-global-steps 1000 \

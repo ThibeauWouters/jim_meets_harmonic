@@ -115,8 +115,6 @@ def body(args):
         # convert injected mass ratio to eta, and apply arccos and arcsin
         q = config["q"]
         eta = q / (1 + q) ** 2
-        iota = float(jnp.arccos(config["cos_iota"]))
-        dec = float(jnp.arcsin(config["sin_dec"]))
         # Setup the timing setting for the injection
         epoch = config["duration"] - config["post_trigger_duration"]
         gmst = Time(config["trigger_time"], format='gps').sidereal_time('apparent', 'greenwich').rad
@@ -129,10 +127,10 @@ def body(args):
             'd_L':       config["d_L"],       # luminosity distance
             't_c':       config["t_c"],       # timeshift w.r.t. trigger time
             'phase_c':   config["phase_c"],   # merging phase
-            'iota':      iota,                # inclination angle
+            'iota':      config["iota"],                # inclination angle
             'psi':       config["psi"],       # polarization angle
             'ra':        config["ra"],        # right ascension
-            'dec':       dec                  # declination
+            'dec':       config["dec"]                  # declination
             }
         
         print("True param:")
@@ -145,7 +143,7 @@ def body(args):
         
         detector_param = {
             'ra':     config["ra"],
-            'dec':    dec,
+            'dec':    config["dec"],
             'gmst':   gmst,
             'psi':    config["psi"],
             'epoch':  epoch,
