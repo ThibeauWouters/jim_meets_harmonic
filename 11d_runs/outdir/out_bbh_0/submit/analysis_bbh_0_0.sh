@@ -9,4 +9,4 @@
 
 
 
-mpirun parallel_bilby_analysis outdir/out_bbh_0/data/bbh_0_data_dump.pickle --nact 40 --naccept 80 --label bbh_0_0 --sampling-seed 738152 --outdir /nfs/urash/twouters/projects/jim_meets_harmonic/11d_runs/outdir/out_bbh_0/result
+mpirun parallel_bilby_analysis outdir/out_bbh_0/data/bbh_0_data_dump.pickle --nact 40 --naccept 80 --label bbh_0_0 --sampling-seed 340079 --outdir /nfs/urash/twouters/projects/jim_meets_harmonic/11d_runs/outdir/out_bbh_0/result
