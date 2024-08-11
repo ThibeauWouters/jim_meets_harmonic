@@ -2,7 +2,7 @@ import psutil
 p = psutil.Process()
 p.cpu_affinity([0])
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = "3"
+os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 os.environ["XLA_PYTHON_CLIENT_MEM_FRACTION"] = "0.10"
 import numpy as np
 # Regular imports 
@@ -19,7 +19,7 @@ from jimgw.jim import Jim
 from jimgw.single_event.detector import H1, L1, V1
 from jimgw.single_event.likelihood import HeterodynedTransientLikelihoodFD, TransientLikelihoodFD
 from jimgw.single_event.waveform import RippleIMRPhenomD # TODO: add the BNS waveforms here as well?
-from jimgw.prior import Uniform, Composite, PowerLaw, AlignedSpin
+from jimgw.prior import Uniform, Composite
 import utils
 from utils import SUPPORTED_WAVEFORMS, DEFAULT_WAVEFORM
 import optax
@@ -36,10 +36,10 @@ PRIOR = {
         "d_L": [5e2, 4e3], 
         "t_c": [-0.01, 0.01], 
         "phase_c": [0.0, 2 * jnp.pi], 
-        "cos_iota": [-1.0, 1.0],
+        "iota": [0.0, 2 * jnp.pi],
         "psi": [0.0, jnp.pi], 
-        "ra": [0.0, 2 * jnp.pi], 
-        "sin_dec": [-1, 1]
+        "ra": [0.0, 2 * jnp.pi],
+        "dec": [0.0, 2 * jnp.pi]
 }
 NAMING = list(PRIOR.keys())
 
@@ -139,8 +139,9 @@ def body(args):
         for k, val in true_param.items():
             print(f"{k}: {val}")
         
-        # Get the true parameter values for the plots
-        truths = np.array([config[key] for key in naming])
+        # # Get the true parameter values for the plots
+        # truths = np.array([config[key] for key in naming])
+        truths = np.array(true_param.values())
         
         detector_param = {
             'ra':     config["ra"],
@@ -200,11 +201,12 @@ def body(args):
     dL_prior       = Uniform(prior_low[4], prior_high[4], naming=['d_L'])
     tc_prior       = Uniform(prior_low[5], prior_high[5], naming=['t_c'])
     phic_prior     = Uniform(prior_low[6], prior_high[6], naming=['phase_c'])
-    cos_iota_prior = Uniform(prior_low[7], prior_high[7], naming=["cos_iota"],transforms={"cos_iota": ("iota",lambda params: jnp.arccos(params["cos_iota"]))},)
+    # cos_iota_prior = Uniform(prior_low[7], prior_high[7], naming=["cos_iota"],transforms={"cos_iota": ("iota",lambda params: jnp.arccos(params["cos_iota"]))},)
+    iota_prior = Uniform(prior_low[7], prior_high[7], naming=["iota"])
     psi_prior      = Uniform(prior_low[8], prior_high[8], naming=["psi"])
     ra_prior       = Uniform(prior_low[9], prior_high[9], naming=["ra"])
-    sin_dec_prior  = Uniform(prior_low[10], prior_high[10], naming=["sin_dec"],transforms={"sin_dec": ("dec",lambda params: jnp.arcsin(params["sin_dec"]))},
-    )
+    # sin_dec_prior  = Uniform(prior_low[10], prior_high[10], naming=["sin_dec"],transforms={"sin_dec": ("dec",lambda params: jnp.arcsin(params["sin_dec"]))},
+    dec_prior  = Uniform(prior_low[10], prior_high[10], naming=["dec"])
     
     # Compose the prior
     prior_list = [
@@ -215,10 +217,12 @@ def body(args):
             dL_prior,
             tc_prior,
             phic_prior,
-            cos_iota_prior,
+            # cos_iota_prior,
+            iota_prior,
             psi_prior,
             ra_prior,
-            sin_dec_prior,
+            # sin_dec_prior,
+            dec_prior,
     ]
     complete_prior = Composite(prior_list)
     bounds = jnp.array([[p.xmin, p.xmax] for p in complete_prior.priors])
