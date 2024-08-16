@@ -216,9 +216,6 @@ def body(args):
                 ifo.frequencies = freqs
                 ifo.data = (real_strain + 1j * imag_strain)[mask]
                 ifo.psd = psd_values[mask]
-                print(ifo.frequencies)
-                print(ifo.data)
-                print(ifo.psd)
                 
                 print(f"Loaded {name} data from bilby output")
                 

@@ -11,4 +11,5 @@ python injection_recovery.py \
     --n-global-steps 1000 \
     --n-local-steps 10 \
     --eps-mass-matrix 0.001 \
-    --n-epochs 100
+    --n-epochs 100 \
+    --sampling-seed 42
