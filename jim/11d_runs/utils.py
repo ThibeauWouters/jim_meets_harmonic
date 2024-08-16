@@ -584,6 +584,12 @@ def get_parser(**kwargs):
         help="Whether to load and redo an existing injection (True) or to generate a new set of parameters (False).",
     )
     parser.add_argument(
+        "--from-bilby",
+        type=bool,
+        default=False,
+        help="If true, load the injection from output that is generated from a bilby datadump file. Default is False.",
+    )
+    parser.add_argument(
         "--id",
         type=str,
         default="",

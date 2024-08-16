@@ -161,16 +161,35 @@ def body(args):
                                 "V1": args.psd_file_V1}
     
         # inject signal into ifos
-        for idx, ifo in enumerate(ifos):
-            key, subkey = jax.random.split(key)
-            ifo.inject_signal(
-                subkey,
-                freqs,
-                h_sky,
-                detector_param,
-                psd_file=psds[ifo.name],
-            )
-        print("Signal injected")
+        if not args.from_bilby:
+            print("Injecting signal from scratch")
+        
+            for idx, ifo in enumerate(ifos):
+                key, subkey = jax.random.split(key)
+                ifo.inject_signal(
+                    subkey,
+                    freqs,
+                    h_sky,
+                    detector_param,
+                    psd_file=psds[ifo.name],
+                )
+            print("Signal injected")
+            
+        else:
+            print("Injecting signal from output generated from bilby")
+            for ifo in ifos:
+                name = ifo.name
+                
+                bilby_file = os.path.join(outdir, f"{name}_data.npz")
+                ifo_data = np.load(bilby_file)
+                
+                freqs, real_strain, imag_strain, psd_values = ifo_data["freqs"], ifo_data["real_strain"], ifo_data["imag_strain"], ifo_data["psd_values"]
+                
+                ifo.freqs = freqs
+                ifo.data = real_strain + 1j * imag_strain
+                ifo.psd = psd_values
+                
+                print(f"Loaded {name} data from bilby output")
         
         # TODO: needs to be modified?
         h1_snr = utils.compute_snr(H1, h_sky, detector_param)

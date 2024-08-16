@@ -1,7 +1,7 @@
 python injection_recovery.py \
     --outdir ./outdir/ \
-    --load-existing-config True \
-    --id "3" \
+    --id "from_bilby" \
+    --from-bilby True \
     --psd-file-H1 "../../psds/psd.txt" \
     --psd-file-L1 "../../psds/psd.txt" \
     --psd-file-V1 "../../psds/psd_virgo.txt" \
