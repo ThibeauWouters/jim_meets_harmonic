@@ -36,6 +36,7 @@ BILBY_TO_JIM_DICT = {"chirp_mass": "M_c",
                      "geocent_time": "t_c",
                      "phase": "phase_c",
                      "theta_jn": "iota",
+                     "psi": "psi",
                      "ra": "ra",
                      "dec": "dec"}
 
