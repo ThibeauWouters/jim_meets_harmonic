@@ -2,7 +2,7 @@ import psutil
 p = psutil.Process()
 p.cpu_affinity([0])
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = "0"
+os.environ['CUDA_VISIBLE_DEVICES'] = "3"
 os.environ["XLA_PYTHON_CLIENT_MEM_FRACTION"] = "0.10"
 import numpy as np
 # Regular imports 
@@ -57,6 +57,11 @@ def body(args):
     start_time = time.time()
     # TODO: Deal with the naming, to make it automatic
     naming = NAMING
+    
+    # Note: if we load from bilby, then we do not need to generate, so load existing config is set to true
+    if args.from_bilby:
+        print("Setting load_existing_config to True, since we are loading from bilby so we don't need to generate new parameters")
+        args.load_existing_config = True
     
     # Fetch waveform used
     if args.waveform_approximant not in SUPPORTED_WAVEFORMS:
@@ -140,7 +145,7 @@ def body(args):
         
         # # Get the true parameter values for the plots
         # truths = np.array([config[key] for key in naming])
-        truths = np.array(true_param.values())
+        truths = np.array(list(true_param.values()))
         
         detector_param = {
             'ra':     config["ra"],
@@ -244,47 +249,79 @@ def body(args):
     # sin_dec_prior  = Uniform(prior_low[10], prior_high[10], naming=["sin_dec"],transforms={"sin_dec": ("dec",lambda params: jnp.arcsin(params["sin_dec"]))},
     dec_prior  = Uniform(prior_low[10], prior_high[10], naming=["dec"])
     
-    # Compose the prior
-    prior_list = [
-            Mc_prior,
-            q_prior,
-            s1z_prior,
-            s2z_prior,
-            dL_prior,
-            tc_prior,
-            phic_prior,
-            # cos_iota_prior,
-            iota_prior,
-            psi_prior,
-            ra_prior,
-            # sin_dec_prior,
-            dec_prior,
-    ]
+    # If this is a 4D run, then we only sample over the first 4 parameters, the other parameters are fixed:
+    
+    if args.is_4d_run:
+        # Compose the prior
+        prior_list = [
+                Mc_prior,
+                q_prior,
+                s1z_prior,
+                s2z_prior,
+        ]
+        
+        fixing_parameters = {"d_L": config["d_L"], 
+                             "t_c": config["t_c"], 
+                             "phase_c": config["phase_c"], 
+                             "iota": config["iota"], 
+                             "psi": config["psi"], 
+                             "ra": config["ra"], 
+                             "dec": config["dec"]}
+        
+        truths = truths[:4]
+        print("DEBUGDEBUGDEBUGDEBUGDEBUGDEBUG:len(truths)")
+        print(len(truths))
+        print(truths)
+        
+    else:
+        # Compose the prior
+        prior_list = [
+                Mc_prior,
+                q_prior,
+                s1z_prior,
+                s2z_prior,
+                dL_prior,
+                tc_prior,
+                phic_prior,
+                # cos_iota_prior, #FIXME:
+                iota_prior,
+                psi_prior,
+                ra_prior,
+                # sin_dec_prior, #FIXME:
+                dec_prior,
+        ]
+        
+        fixing_parameters = {}
+    
+    # Combine the given list of priors
     complete_prior = Composite(prior_list)
     bounds = jnp.array([[p.xmin, p.xmax] for p in complete_prior.priors])
     print("Finished prior setup")
 
     print("Initializing likelihood")
     if args.use_relative_binning:
-        print("INFO using relative binning")
-        if args.relative_binning_ref_params_equal_true_params:
-            ref_params = true_param
-            print("Using the true parameters as reference parameters for the relative binning")
-        else:
-            ref_params = None
-            print("Will search for reference waveform for relative binning")
+        
+        raise ValueError("Please don't use relative binning for the harmonic paper (for now?)")
+        
+        # print("INFO using relative binning")
+        # if args.relative_binning_ref_params_equal_true_params:
+        #     ref_params = true_param
+        #     print("Using the true parameters as reference parameters for the relative binning")
+        # else:
+        #     ref_params = None
+        #     print("Will search for reference waveform for relative binning")
             
-        likelihood = HeterodynedTransientLikelihoodFD(
-            ifos,
-            prior=complete_prior,
-            bounds=bounds,
-            n_bins = args.relative_binning_binsize,
-            waveform=waveform,
-            trigger_time=config["trigger_time"],
-            duration=config["duration"],
-            post_trigger_duration=config["post_trigger_duration"],
-            ref_params=ref_params,
-            )
+        # likelihood = HeterodynedTransientLikelihoodFD(
+        #     ifos,
+        #     prior=complete_prior,
+        #     bounds=bounds,
+        #     n_bins = args.relative_binning_binsize,
+        #     waveform=waveform,
+        #     trigger_time=config["trigger_time"],
+        #     duration=config["duration"],
+        #     post_trigger_duration=config["post_trigger_duration"],
+        #     ref_params=ref_params,
+        #     )
 
     else:
         print("INFO using normal likelihood")
@@ -294,6 +331,7 @@ def body(args):
             trigger_time=config["trigger_time"],
             duration=config["duration"],
             post_trigger_duration=config["post_trigger_duration"],
+            fixing_parameters = fixing_parameters
         )
         
     # Get the mass matrix of step sizes for the local sampler
