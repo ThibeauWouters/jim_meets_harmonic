@@ -1,10 +1,11 @@
 python injection_recovery.py \
-    --outdir ./outdir/ \
-    --id "from_bilby" \
+    --outdir "./4d_runs/outdir/" \
+    --id "1" \
     --from-bilby True \
-    --psd-file-H1 "../../psds/psd.txt" \
-    --psd-file-L1 "../../psds/psd.txt" \
-    --psd-file-V1 "../../psds/psd_virgo.txt" \
+    --is-4d-run True \
+    --psd-file-H1 "../psds/psd.txt" \
+    --psd-file-L1 "../psds/psd.txt" \
+    --psd-file-V1 "../psds/psd_virgo.txt" \
     --use-relative-binning False \
     --n-loop-training 10 \
     --n-loop-production 5 \
