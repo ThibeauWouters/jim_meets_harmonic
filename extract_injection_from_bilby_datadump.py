@@ -34,7 +34,7 @@ BILBY_TO_JIM_DICT = {"chirp_mass": "M_c",
                      "chi_2": "s2_z",
                      "luminosity_distance": "d_L",
                      "geocent_time": "t_c",
-                     "phase": "phi_c",
+                     "phase": "phase_c",
                      "theta_jn": "iota",
                      "ra": "ra",
                      "dec": "dec"}
@@ -59,7 +59,6 @@ def main(datadump_file: str,
     with open(datadump_file, "rb") as f:
         data = pickle.load(f)
         
-        print(data.keys())
         ifo_list = data["ifo_list"]
         injection_parameters = data["injection_parameters"]
     
@@ -80,7 +79,7 @@ def main(datadump_file: str,
         # Assert all have same length
         assert len(freqs) == len(real_strain) == len(imag_strain) == len(psd_values), "Some shape mismatch"
             
-        print(f"Saving {ifo} data to file")
+        print(f"Saving {ifo.name} data to npz file")
         np.savez(os.path.join(outdir, f"{ifo.name}_data.npz"), freqs=freqs, real_strain=real_strain, imag_strain=imag_strain, psd_values=psd_values)
         
     ### CREATE CONFIG FILE
@@ -88,6 +87,7 @@ def main(datadump_file: str,
     for bilby_name, jim_name in BILBY_TO_JIM_DICT.items():
         config_dict[jim_name] = float(injection_parameters[bilby_name])
         
+    print(f"Saving injection and metadata to config.json file")
     with open(os.path.join(outdir, "config.json"), "w") as f:
         json.dump(config_dict, f)
         
