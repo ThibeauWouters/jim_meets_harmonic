@@ -86,6 +86,7 @@ def body(args):
     network_snr = 0.0
     print(f"The SNR threshold parameter is set to {args.SNR_threshold}")
     while network_snr < args.SNR_threshold:
+        
         # Generate the parameters or load them from an existing file
         if args.load_existing_config:
             config_path = f"{outdir}config.json"
@@ -151,8 +152,7 @@ def body(args):
             }
         print(f"The injected parameters are {true_param}")
         
-        # Generating the geocenter waveform
-        h_sky = waveform(freqs, true_param)
+        
         # Setup interferometers
         # TODO: make ifos more general? Make fetching PSD files more general?
         ifos = [H1, L1, V1]
@@ -161,33 +161,71 @@ def body(args):
                                 "V1": args.psd_file_V1}
     
         # inject signal into ifos
-        for idx, ifo in enumerate(ifos):
-            key, subkey = jax.random.split(key)
-            ifo.inject_signal(
-                subkey,
-                freqs,
-                h_sky,
-                detector_param,
-                psd_file=psds[ifo.name],
-            )
-        print("Signal injected")
+        if not args.from_bilby:
+            print("Injecting signal from scratch")
+            
+            # Generating the geocenter waveform
+            h_sky = waveform(freqs, true_param)
         
-        # TODO: needs to be modified?
-        h1_snr = utils.compute_snr(H1, h_sky, detector_param)
-        l1_snr = utils.compute_snr(L1, h_sky, detector_param)
-        v1_snr = utils.compute_snr(V1, h_sky, detector_param)
-        network_snr = np.sqrt(h1_snr**2 + l1_snr**2 + v1_snr**2)
+            for idx, ifo in enumerate(ifos):
+                key, subkey = jax.random.split(key)
+                ifo.inject_signal(
+                    subkey,
+                    freqs,
+                    h_sky,
+                    detector_param,
+                    psd_file=psds[ifo.name],
+                )
+            print("Signal injected")
+            
+            # TODO: needs to be modified?
+            h1_snr = utils.compute_snr(H1, h_sky, detector_param)
+            print(f"SNR for H1: {h1_snr}")
+            l1_snr = utils.compute_snr(L1, h_sky, detector_param)
+            print(f"SNR for L1: {l1_snr}")
+            v1_snr = utils.compute_snr(V1, h_sky, detector_param)
+            print(f"SNR for V1: {v1_snr}")
+            network_snr = np.sqrt(h1_snr**2 + l1_snr**2 + v1_snr**2)
+            
+            # If the SNR is too low, we need to generate new parameters
+            if network_snr < args.SNR_threshold:
+                print(f"Network SNR is less than {args.SNR_threshold}, generating new parameters")
+                if args.load_existing_config:
+                    raise ValueError("SNR is less than threshold, but loading existing config. This should not happen!")
         
-        # If the SNR is too low, we need to generate new parameters
-        if network_snr < args.SNR_threshold:
-            print(f"Network SNR is less than {args.SNR_threshold}, generating new parameters")
-            if args.load_existing_config:
-                raise ValueError("SNR is less than threshold, but loading existing config. This should not happen!")
-    
-    
-    print(f"Saving network SNR")
-    with open(outdir + 'network_snr.txt', 'w') as file:
-        file.write(str(network_snr))
+        
+            print(f"Saving network SNR")
+            with open(outdir + 'network_snr.txt', 'w') as file:
+                file.write(str(network_snr))
+            
+        else:
+            print("Injecting signal from output generated from bilby")
+            for ifo in ifos:
+                name = ifo.name
+                
+                bilby_file = os.path.join(outdir, f"{name}_data.npz")
+                ifo_data = np.load(bilby_file)
+                
+                # NOTE: this overwrites freqs!
+                freqs, real_strain, imag_strain, psd_values = ifo_data["freqs"], ifo_data["real_strain"], ifo_data["imag_strain"], ifo_data["psd_values"]
+                
+                mask = (freqs >= config["fmin"]) & (freqs <= config["f_sampling"] / 2)
+                
+                freqs = freqs[mask]
+                
+                ifo.frequencies = freqs
+                ifo.data = (real_strain + 1j * imag_strain)[mask]
+                ifo.psd = psd_values[mask]
+                
+                print(f"Loaded {name} data from bilby output")
+                
+            # Pass the SNR threshold check
+            network_snr = args.SNR_threshold + 1
+                
+            # TODO: can remove this? # At this point still need to generate the geocenter waveform
+            # h_sky = waveform(freqs, true_param)
+        
+
 
     print("Start prior setup")
     
@@ -227,15 +265,15 @@ def body(args):
     print("Finished prior setup")
 
     print("Initializing likelihood")
-    if args.relative_binning_ref_params_equal_true_params:
-        ref_params = true_param
-        print("Using the true parameters as reference parameters for the relative binning")
-    else:
-        ref_params = None
-        print("Will search for reference waveform for relative binning")
-    
     if args.use_relative_binning:
         print("INFO using relative binning")
+        if args.relative_binning_ref_params_equal_true_params:
+            ref_params = true_param
+            print("Using the true parameters as reference parameters for the relative binning")
+        else:
+            ref_params = None
+            print("Will search for reference waveform for relative binning")
+            
         likelihood = HeterodynedTransientLikelihoodFD(
             ifos,
             prior=complete_prior,
@@ -346,6 +384,9 @@ def body(args):
     utils.plot_log_prob(log_prob, "Log probability (production)", "log_prob_production", outdir)
 
     # Plot the chains as corner plots
+    if args.from_bilby:
+        # TODO: if we load from bilby then the true parameters don't match -- these have to be loaded!
+        truths = None
     utils.plot_chains(chains, "chains_production", outdir, truths = truths)
     
     # Save the NF and show a plot of samples from the flow
