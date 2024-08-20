@@ -3,7 +3,7 @@ mass_ratio = Uniform(name='mass_ratio', minimum=0.125, maximum=1)
 chi_1 = Uniform(name='chi_1', minimum=-0.99, maximum=0.99)
 chi_2 = Uniform(name='chi_2', minimum=-0.99, maximum=0.99)
 
-luminosity_distance=2500
+luminosity_distance=2500.0
 dec=2.5
 ra=2.5
 theta_jn=2.5
