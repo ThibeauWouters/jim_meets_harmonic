@@ -269,9 +269,6 @@ def body(args):
                              "dec": config["dec"]}
         
         truths = truths[:4]
-        print("DEBUGDEBUGDEBUGDEBUGDEBUGDEBUG:len(truths)")
-        print(len(truths))
-        print(truths)
         
     else:
         # Compose the prior

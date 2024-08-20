@@ -58,6 +58,11 @@ def body(args):
     # TODO: Deal with the naming, to make it automatic
     naming = NAMING
     
+    # Note: if we load from bilby, then we do not need to generate, so load existing config is set to true
+    if args.from_bilby:
+        print("Setting load_existing_config to True, since we are loading from bilby so we don't need to generate new parameters")
+        args.load_existing_config = True
+    
     # Fetch waveform used
     if args.waveform_approximant not in SUPPORTED_WAVEFORMS:
         print(f"Waveform approximant {args.waveform_approximant} not supported. Supported waveforms are {SUPPORTED_WAVEFORMS}. Changing to {DEFAULT_WAVEFORM}.")
