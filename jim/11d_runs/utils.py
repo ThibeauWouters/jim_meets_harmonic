@@ -584,6 +584,12 @@ def get_parser(**kwargs):
         help="Whether to load and redo an existing injection (True) or to generate a new set of parameters (False).",
     )
     parser.add_argument(
+        "--4d-run",
+        type=bool,
+        default=False,
+        help="If true, this is a 4D run, meaning that we only sample over chirp mass, mass ratio and the aligned spins. This is for the harmonic paper.",
+    )
+    parser.add_argument(
         "--from-bilby",
         type=bool,
         default=False,
