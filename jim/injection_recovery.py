@@ -377,7 +377,8 @@ def body(args):
     )
     
     ### Finally, do the sampling
-    key = jax.random.PRNGKey(args.sampling_seed)
+    print(f"The sampling seed will be {int(args.sampling_seed)}")
+    key = jax.random.PRNGKey(int(args.sampling_seed))
     jim.sample(key)
         
     # === Show results, save output ===
