@@ -1,0 +1,139 @@
+Mon Nov 11 10:47:47 CET 2024
+NVIDIA A100-SXM4-40GB
+given_args
+None
+------------------------------------
+Arguments script:
+noise_seed: 13245
+sampling_seed: 1
+outdir: ./11d_runs/outdir/
+load_existing_config: False
+is_4d_run: False
+from_bilby: True
+id: from_bilby_seed_1
+SNR_threshold: 12
+psd_file_H1: ../psds/psd.txt
+psd_file_L1: ../psds/psd.txt
+psd_file_V1: ../psds/psd_virgo.txt
+waveform_approximant: IMRPhenomD
+use_scheduler: True
+use_relative_binning: False
+relative_binning_binsize: 500
+relative_binning_ref_params_equal_true_params: True
+save_training_chains: False
+eps_mass_matrix: 0.001
+stopping_criterion_global_acc: 1.0
+n_loop_training: 10
+n_loop_production: 10
+n_local_steps: 10
+n_global_steps: 1000
+n_epochs: 100
+n_chains: 1000
+learning_rate: 0.001
+max_samples: 30000
+momentum: 0.9
+batch_size: 30000
+use_global: True
+logging: True
+keep_quantile: 0.0
+local_autotune: None
+train_thinning: 1
+output_thinning: 30
+n_sample_max: 100000
+precompile: False
+verbose: False
+num_layers: 10
+hidden_size: [128, 128]
+num_bins: 8
+------------------------------------
+Starting main code
+Setting load_existing_config to True, since we are loading from bilby so we don't need to generate new parameters
+Saving results to: ./11d_runs/outdir/injection_from_bilby_seed_1/
+The SNR threshold parameter is set to 12
+Loading existing config, path: ./11d_runs/outdir/injection_from_bilby_seed_1/config.json
+Injecting signals . . .
+True param:
+M_c: 85.54682912431389
+eta: 0.2398261225129157
+s1_z: 0.009286201503343028
+s2_z: 0.5630163710714331
+d_L: 2323.576837215591
+t_c: 0.004990047813625274
+phase_c: 3.721859863388068
+iota: 3.272831423832071
+psi: 2.369703892859265
+ra: 0.33682209317908457
+dec: 1.8419640987865482
+The injected parameters are {'M_c': 85.54682912431389, 'eta': 0.2398261225129157, 's1_z': 0.009286201503343028, 's2_z': 0.5630163710714331, 'd_L': 2323.576837215591, 't_c': 0.004990047813625274, 'phase_c': 3.721859863388068, 'iota': 3.272831423832071, 'psi': 2.369703892859265, 'ra': 0.33682209317908457, 'dec': 1.8419640987865482}
+Injecting signal from output generated from bilby
+Loaded H1 data from bilby output
+Loaded L1 data from bilby output
+Loaded V1 data from bilby output
+Start prior setup
+Finished prior setup
+Initializing likelihood
+INFO using normal likelihood
+Parameters are fixed {}
+Learning rate is now:
+<function polynomial_schedule.<locals>.schedule at 0x14cbbb5635b0>
+Using sample transforms
+The sampling seed will be 1
+Global Tuning:   0%|          | 0/10 [00:00<?, ?it/s]Global Tuning:  10%|█         | 1/10 [03:09<28:26, 189.63s/it]Global Tuning:  20%|██        | 2/10 [04:14<15:28, 116.06s/it]Global Tuning:  30%|███       | 3/10 [05:18<10:47, 92.54s/it] Global Tuning:  40%|████      | 4/10 [06:23<08:09, 81.51s/it]Global Tuning:  50%|█████     | 5/10 [07:27<06:16, 75.40s/it]Global Tuning:  60%|██████    | 6/10 [08:32<04:46, 71.75s/it]Global Tuning:  70%|███████   | 7/10 [09:37<03:28, 69.41s/it]Global Tuning:  80%|████████  | 8/10 [10:41<02:15, 67.87s/it]Global Tuning:  90%|█████████ | 9/10 [11:46<01:06, 66.84s/it]Global Tuning: 100%|██████████| 10/10 [12:50<00:00, 66.14s/it]Global Tuning: 100%|██████████| 10/10 [12:50<00:00, 77.09s/it]
+Compiling MALA body
+Global Sampling:   0%|          | 0/10 [00:00<?, ?it/s]Global Sampling:  10%|█         | 1/10 [01:02<09:19, 62.21s/it]Global Sampling:  20%|██        | 2/10 [02:04<08:17, 62.20s/it]Global Sampling:  30%|███       | 3/10 [03:06<07:15, 62.20s/it]Global Sampling:  40%|████      | 4/10 [04:08<06:13, 62.19s/it]Global Sampling:  50%|█████     | 5/10 [05:10<05:10, 62.19s/it]Global Sampling:  60%|██████    | 6/10 [06:13<04:08, 62.19s/it]Global Sampling:  70%|███████   | 7/10 [07:15<03:06, 62.19s/it]Global Sampling:  80%|████████  | 8/10 [08:17<02:04, 62.19s/it]Global Sampling:  90%|█████████ | 9/10 [09:19<01:02, 62.19s/it]Global Sampling: 100%|██████████| 10/10 [10:21<00:00, 62.19s/it]Global Sampling: 100%|██████████| 10/10 [10:21<00:00, 62.19s/it]
+Training summary
+==========
+M_c: 61.430 +/- 21.125
+d_L: 2236.910 +/- 1014.901
+dec: 0.018 +/- 0.649
+iota: 1.873 +/- 0.362
+phase_c: 3.109 +/- 1.815
+psi: 1.577 +/- 0.894
+q: 0.545 +/- 0.261
+ra: 3.421 +/- 1.827
+s1_z: 0.006 +/- 0.571
+s2_z: 0.360 +/- 0.212
+t_c: -0.000 +/- 0.006
+Log probability: nan +/- nan
+Local acceptance: 0.000 +/- 0.000
+Global acceptance: 0.000 +/- 0.000
+Max loss: 20.449, Min loss: 8.418
+Production summary
+==========
+M_c: 61.430 +/- 21.125
+d_L: 2236.910 +/- 1014.901
+dec: 0.018 +/- 0.649
+iota: 1.873 +/- 0.362
+phase_c: 3.109 +/- 1.815
+psi: 1.577 +/- 0.894
+q: 0.545 +/- 0.261
+ra: 3.421 +/- 1.827
+s1_z: 0.006 +/- 0.571
+s2_z: 0.360 +/- 0.212
+t_c: -0.000 +/- 0.006
+Log probability: nan +/- nan
+Local acceptance: 0.000 +/- 0.000
+Global acceptance: 0.000 +/- 0.000
+Producing output plots . . . 
+Saving samples to ./11d_runs/outdir/injection_from_bilby_seed_1/results_training.npz
+np.shape(chains)
+(1000, 350, 11)
+Time taken: 1415.3166930675507 seconds (23.588611551125844 minutes)
+Saving runtime
+Finished injection recovery successfully!
+DONE
+
+JOB STATISTICS
+==============
+Job ID: 8476021
+Cluster: snellius
+User/Group: twouters2/twouters2
+State: RUNNING
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 07:10:12 core-walltime
+Job Wall-clock time: 00:23:54
+Memory Utilized: 0.00 MB (estimated maximum)
+Memory Efficiency: 0.00% of 10.00 GB (10.00 GB/node)
+WARNING: Efficiency statistics may be misleading for RUNNING jobs.

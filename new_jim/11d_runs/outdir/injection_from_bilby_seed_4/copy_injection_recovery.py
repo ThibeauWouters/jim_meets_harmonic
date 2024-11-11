@@ -339,10 +339,10 @@ def body(args):
         
     # Get the mass matrix of step sizes for the local sampler
     mass_matrix = jnp.eye(len(prior_list))
-    for idx, prior in enumerate(prior_list):
-        if prior.naming[0] in ['t_c']:
-            print(f'Modified the mass matrix for {prior.naming}')
-            mass_matrix = mass_matrix.at[idx, idx].set(1e-3)
+    # for idx, prior in enumerate(prior_list):
+    #     if prior.naming[0] in ['t_c']:
+    #         print(f'Modified the mass matrix for {prior.naming}')
+    #         mass_matrix = mass_matrix.at[idx, idx].set(1e-3)
     local_sampler_arg = {'step_size': mass_matrix * float(args.eps_mass_matrix)}
     
     if args.use_scheduler:
