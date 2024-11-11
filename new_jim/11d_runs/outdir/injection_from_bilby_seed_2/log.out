@@ -1,0 +1,83 @@
+Mon Nov 11 10:34:40 CET 2024
+NVIDIA A100-SXM4-40GB
+given_args
+None
+------------------------------------
+Arguments script:
+noise_seed: 13245
+sampling_seed: 2
+outdir: ./11d_runs/outdir/
+load_existing_config: False
+is_4d_run: False
+from_bilby: True
+id: from_bilby_seed_2
+SNR_threshold: 12
+psd_file_H1: ../psds/psd.txt
+psd_file_L1: ../psds/psd.txt
+psd_file_V1: ../psds/psd_virgo.txt
+waveform_approximant: IMRPhenomD
+use_scheduler: True
+use_relative_binning: False
+relative_binning_binsize: 500
+relative_binning_ref_params_equal_true_params: True
+save_training_chains: False
+eps_mass_matrix: 0.003
+stopping_criterion_global_acc: 1.0
+n_loop_training: 10
+n_loop_production: 10
+n_local_steps: 10
+n_global_steps: 1000
+n_epochs: 100
+n_chains: 1000
+learning_rate: 0.001
+max_samples: 30000
+momentum: 0.9
+batch_size: 30000
+use_global: True
+logging: True
+keep_quantile: 0.0
+local_autotune: None
+train_thinning: 1
+output_thinning: 30
+n_sample_max: 100000
+precompile: False
+verbose: False
+num_layers: 10
+hidden_size: [128, 128]
+num_bins: 8
+------------------------------------
+Starting main code
+Setting load_existing_config to True, since we are loading from bilby so we don't need to generate new parameters
+Saving results to: ./11d_runs/outdir/injection_from_bilby_seed_2/
+The SNR threshold parameter is set to 12
+Loading existing config, path: ./11d_runs/outdir/injection_from_bilby_seed_2/config.json
+Injecting signals . . .
+True param:
+M_c: 85.54682912431389
+eta: 0.2398261225129157
+s1_z: 0.009286201503343028
+s2_z: 0.5630163710714331
+d_L: 2323.576837215591
+t_c: 0.004990047813625274
+phase_c: 3.721859863388068
+iota: 3.272831423832071
+psi: 2.369703892859265
+ra: 0.33682209317908457
+dec: 1.8419640987865482
+The injected parameters are {'M_c': 85.54682912431389, 'eta': 0.2398261225129157, 's1_z': 0.009286201503343028, 's2_z': 0.5630163710714331, 'd_L': 2323.576837215591, 't_c': 0.004990047813625274, 'phase_c': 3.721859863388068, 'iota': 3.272831423832071, 'psi': 2.369703892859265, 'ra': 0.33682209317908457, 'dec': 1.8419640987865482}
+Injecting signal from output generated from bilby
+Loaded H1 data from bilby output
+Loaded L1 data from bilby output
+Loaded V1 data from bilby output
+Start prior setup
+Traceback (most recent call last):
+  File "/gpfs/home6/twouters2/projects/jim_meets_harmonic/new_jim/injection_recovery.py", line 505, in <module>
+    main()
+  File "/gpfs/home6/twouters2/projects/jim_meets_harmonic/new_jim/injection_recovery.py", line 502, in main
+    body(args)
+  File "/gpfs/home6/twouters2/projects/jim_meets_harmonic/new_jim/injection_recovery.py", line 301, in body
+    bounds = jnp.array([[p.xmin, p.xmax] for p in complete_prior.base_prior])
+  File "/gpfs/home6/twouters2/projects/jim_meets_harmonic/new_jim/injection_recovery.py", line 301, in <listcomp>
+    bounds = jnp.array([[p.xmin, p.xmax] for p in complete_prior.base_prior])
+AttributeError: 'SinePrior' object has no attribute 'xmin'
+DONE
