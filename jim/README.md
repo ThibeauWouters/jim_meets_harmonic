@@ -1,0 +1,1 @@
+The `reruns` directory is to compare these runs with the already existing 11d_runs, since these will be performed on Snellius in order to get a timing estimate of the old jim on these GPUs to compare with the new Jim.
